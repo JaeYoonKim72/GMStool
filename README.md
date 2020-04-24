@@ -55,9 +55,9 @@ The multtest, gplots, LDheatmap, genetics, ape, EMMREML, compiler, scatterplot3d
 
 jaeyoonkim72@gmail.com
 
+likemun@gmail.com
 
-# 7. Reference
 
-Lipka, A. E., Tian, F., Wang, Q., Peiffer, J., Li, M., Bradbury, P. J., ... & Zhang, Z. (2012). GAPIT: genome association and prediction integrated tool. Bioinformatics, 28(18), 2397-2399.
+# 7. Citation
 
-Tang, Y., Liu, X., Wang, J., Li, M., Wang, Q., Tian, F., ... & Buckler, E. S. (2016). GAPIT version 2: an enhanced integrated tool for genomic association and prediction. The plant genome, 9(2).
+Pulication is under review.
