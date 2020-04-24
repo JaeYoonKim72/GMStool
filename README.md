@@ -1,4 +1,5 @@
-# GMStool: GWAS-based Marker Selection Tool for Genomic Prediction from Genomic Data
+# GMStool
+  - GWAS-based Marker Selection Tool for Genomic Prediction from Genomic Data
 
 # 1. GWAS GAPIT pipeline for continuous traits
 
