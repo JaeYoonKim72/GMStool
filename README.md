@@ -14,14 +14,12 @@ Source code was written in Python and R languages and supported on windows and l
 
 The flow-chart is as follows:
 
-![GWAS1](https://user-images.githubusercontent.com/49300659/64962833-214e7600-d8d3-11e9-9d6d-6c07d28c696e.png)
 
 
 # 3. Usage
 
 Usage: run_gapit.R -g [GENO] -p [PHENO] -o [PREFIX] -maf [MAF] -ms [MISSING]
 
-![GWAS2](https://user-images.githubusercontent.com/49300659/64962505-881f5f80-d8d2-11e9-9358-03bb58231062.png)
 
 
     Example: Rscript run_gapit.R \
@@ -41,7 +39,6 @@ Usage: run_gapit.R -g [GENO] -p [PHENO] -o [PREFIX] -maf [MAF] -ms [MISSING]
 
 Result files are provided with a total of 25 files including a result table and the following 3 images.
 
-![GWAS_resul4](https://user-images.githubusercontent.com/49300659/64963770-c1f16580-d8d4-11e9-90c2-d1beff4e423f.png)
 
 
 # 5. Requirement
