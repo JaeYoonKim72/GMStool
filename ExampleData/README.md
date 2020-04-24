@@ -10,9 +10,11 @@ Before using the example file, extract the "Ex_genotype.zip" file.
    - Markers are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
 
 
+
 2. "Ex_phenotype.txt" 
    - This file is the phenotype data of 413 samples, and consistis of two columns, the Sample ID and the phenotype value.
    - The phenotype column in the example file was named "Phenotype".
+
 
 
 3. "Ex_gwas.txt"
