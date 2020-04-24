@@ -19,5 +19,5 @@ Before using the example file, extract the "Ex_genotype.zip" file.
 
 3. "Ex_gwas.txt"
    - This file is the result of a genome-wide association study between the 413 sample samples and their phenotypes.
-   - 
+   - This file has 4 columns, and consists of "SNP marker", "Chromosome", "Position", and "P.value" columns in order.
    
