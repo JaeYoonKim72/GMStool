@@ -1,6 +1,7 @@
 # GMStool
   - GWAS-based Marker Selection Tool for Genomic Prediction from Genomic Data
 
+
 ## 1. Introduction
 
   - GMStool is a tool of selecting an optimal marker-set for predicting a phenotype. 
@@ -9,7 +10,6 @@
   
   
 ## 2. Flow-chart
-
   - Flow-chart of GMStool is as follows:
 
 ![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
@@ -23,10 +23,7 @@
  - "GWAS result file" consists of SNPIDs (marker names), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
-
 ![그림111111111](https://user-images.githubusercontent.com/49300659/80273485-57779200-870d-11ea-8cd0-1297dd98b052.jpg)
-
-
 
 
   #### 3-2. Marker selection phase
@@ -43,34 +40,35 @@
   - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
   - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
   - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
-  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. 
+  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
+  - -t option 
   
   
-    Usage: 
-         GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
-                          -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
-                          -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
-                          
-    Description of arguments:
-         -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
-         -g GENO,           Genotype file (Essential).
-         -p PHENO,          Phenotype file (Essential).
-         -gw GWAS,          GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally (Essential or optional).
-         -i INFO,           Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
-         -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
-         -cv CV,            The number of cross validation (Default 3).
-         -a ACC,            Goal of correlation rate (Default 0.9).
-         -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.001).
-         -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
-         -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
-         -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
-         -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
-         -t TIME,           Runtime cut-off per each CV (Default 1 hour).
+        Usage: 
+             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
+                              -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
+                              -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
+                             
+        Description of arguments:
+             -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
+             -g GENO,           Genotype file (Essential).
+             -p PHENO,          Phenotype file (Essential).
+             -gw GWAS,          GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally (Essential or optional).
+             -i INFO,           Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
+             -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
+             -cv CV,            The number of cross validation (Default 3).
+             -a ACC,            Goal of correlation rate (Default 0.9).
+             -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.001).
+             -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
+             -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
+             -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
+             -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
+             -t TIME,           Runtime cut-off per each CV (Default 1 hour).
 
 
 
 
-    Example of marker selection not using multithreading
+        Example of marker selection not using multithreading
     
           Rscript GMStools.MS.v1.R \   
     
@@ -92,7 +90,7 @@
 
 
 
-    Example of marker selection using multithreading
+        Example of marker selection using multithreading
     
           Rscript GMStools.MS.MultiThreading.v1.R \   
     
