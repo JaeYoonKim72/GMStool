@@ -18,7 +18,7 @@ The flow-chart is as follows:
 
 
 ## 3. Run of GMStool
-  # 3-1. Preparation phase
+  ### 3-1. Preparation phase
 
 
 
