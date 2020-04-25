@@ -23,6 +23,7 @@ The flow-chart is as follows:
  - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
  - "GWAS result file" consists of SNPIDs (marker name), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
+ - If "GWAS result file" is not provided by the user, GMStool internally calculates marker effects to be used for marker selection. In this case, a "marker information file" composed of SNPID, chromosome number, and physical position columns must be provided (-i option). However, it is recommended to provide a separate GWAS result file with -gw option to GMStool.
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
 
