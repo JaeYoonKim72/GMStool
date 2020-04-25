@@ -39,14 +39,15 @@
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
   - -a option specifies the target accuracy of the markers to be selected.
-  - 
+  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the incremental value.
+  - -is option 
   
-
-Usage: 
+  
+    Usage: 
          GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
                           -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
                           -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
-
+                          
     Description of arguments:
          -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
          -g GENO,           Genotype file (Essential).
