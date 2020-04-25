@@ -135,8 +135,12 @@ The flow-chart is as follows:
 
 ## 4. Results
 
-Result files are provided with a total of 25 files including a result table and the following 3 images.
+  #### 4-1. Marker selection phase
+  
+  ![re1](https://user-images.githubusercontent.com/49300659/80275083-fa360d80-8719-11ea-960c-bb9c7ef82dc1.jpg)
 
+
+  #### 4-2. Final modeling phase
 
 
 ## 5. Requirement
