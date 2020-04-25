@@ -1,7 +1,7 @@
 # GMStool
   - GWAS-based Marker Selection Tool for Genomic Prediction from Genomic Data
 
-## 1. GWAS GAPIT pipeline for continuous traits
+## 1. Introduction
 
 GWAS GAPIT pipeline was based on GAPIT libaraies developed by Lipka and Tang, and constructed by Jae-Yoon Kim.
 
@@ -10,14 +10,14 @@ This analysis pipeline uses a VCF file as input file and performs a genome-wide 
 Source code was written in Python and R languages and supported on windows and linux platforms.
 
 
-## 2. Flow-chart of GMStool
+## 2. Flow-chart
 
 The flow-chart is as follows:
 
 ![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
 
 
-## 3. Run of GMStool
+## 3. Run
   #### 3-1. Preparation phase
 
 
