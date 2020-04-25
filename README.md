@@ -19,11 +19,11 @@ The flow-chart is as follows:
 
 ## 3. Run
   #### 3-1. Preparation phase
- - GMStool essentially requires three input files, genotype, phenotype, and GWAS result files. 
+ - GMStool essentially requires three input files, genotype, phenotype, and GWAS result files. Preset file is optional.
  - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
  - "GWAS result file" consists of SNPIDs (marker name), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
- - "Preset file" means a list of markers that must be selected, and consists of a column with marker names. This file is optional.
+ - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
 
 ![그림111111111](https://user-images.githubusercontent.com/49300659/80273485-57779200-870d-11ea-8cd0-1297dd98b052.jpg)
