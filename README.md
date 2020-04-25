@@ -38,10 +38,11 @@
   - -i option means the marker information file, and is used when the -gw option is not given. 
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
-  
+  - -a option specifies the target accuracy of the markers to be selected.
+  - 
   
 
-    Usage: 
+Usage: 
          GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
                           -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
                           -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
