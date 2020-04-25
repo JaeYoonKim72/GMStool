@@ -32,8 +32,9 @@
 
   #### 3-2. Marker selection phase
 
-  - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two run scripts is whether multithreading is performed. All other options are identical.
-  - 
+  - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are identical.
+  - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
+  - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
 
 
     Usage: 
