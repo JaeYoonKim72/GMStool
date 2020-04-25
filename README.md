@@ -31,23 +31,45 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
                         -cv [CV] -ss [Number of selected SNPs
 
 
-    Example: Rscript GMStools.MS.v1.R \   
+    Example of non-multithreading
+        Rscript GMStools.MS.v1.R \   
     
-                         -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
+                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
                          
-                         -g ExampleData/Ex_genotype.txt \     # Genotype file
+                     -g ExampleData/Ex_genotype.txt \     # Genotype file
                          
-                         -p ExampleData/Ex_phenotype.txt \    # Phenotype file
+                     -p ExampleData/Ex_phenotype.txt \    # Phenotype file
                          
-                         -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                     -gw ExampleData/Ex_gwas.txt \        # GWAS result file
                          
-                         -cv 3 \                              # Cross validation value
+                     -cv 3 \                              # Cross validation value
                          
-                         -a 0.9 \                             # Target accuracy 
+                     -a 0.9 \                             # Target accuracy 
                           
-                         -is 5 \                              # The number of initial SNPs
+                     -is 5 \                              # The number of initial SNPs
                                                  
-                         -t 4                                 # Computational time for each CV
+                     -t 4                                 # Computational time for each CV
+
+
+    Example of multithreading
+        Rscript GMStools.MS.MultiThreading.v1.R \   
+    
+                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
+                         
+                     -g ExampleData/Ex_genotype.txt \     # Genotype file
+                         
+                     -p ExampleData/Ex_phenotype.txt \    # Phenotype file
+                         
+                     -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                         
+                     -cv 3 \                              # Cross validation value
+                         
+                     -a 0.9 \                             # Target accuracy 
+                          
+                     -is 5 \                              # The number of initial SNPs
+                                                 
+                     -t 4                                 # Computational time for each CV
+
 
 
 ## 4. Results
