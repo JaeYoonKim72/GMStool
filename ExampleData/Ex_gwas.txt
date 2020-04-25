@@ -1,4 +1,4 @@
-SNP	Chromosome	Position	P.value
+SNPID	Chromosome	Position	P.value
 id6006118	6	9651785	1.44E-06
 id3006754	3	13077093	6.50E-06
 wd7000321	7	3135312	7.60E-06
