@@ -29,25 +29,12 @@
   #### 3-2. Marker selection phase
 
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are identical.
-  - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
-  - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
-  - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
-  - -i option means the marker information file, and is used when the -gw option is not given. 
-  - -pre option specifies markers that must be selected.
-  - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
-  - -a option specifies the target accuracy of the markers to be selected.
-  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the increment value.
-  - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
-  - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
-  - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
-  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
-  - -t option 
   
-  
-        Usage: 
-             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
-                              -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
-                              -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
+    
+    Usage: 
+    GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
+                     -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
+                     -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
                              
         Description of arguments:
              -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
@@ -64,6 +51,24 @@
              -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
              -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
              -t TIME,           Runtime cut-off per each CV (Default 1 hour).
+  
+  
+  - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
+  - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
+  - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
+  - -i option means the marker information file, and is used when the -gw option is not given. 
+  - -pre option specifies markers that must be selected.
+  - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
+  - -a option specifies the target accuracy of the markers to be selected.
+  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the increment value.
+  - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
+  - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
+  - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
+  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
+  - -t option 
+  
+  
+
 
 
 
