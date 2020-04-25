@@ -28,24 +28,24 @@ The flow-chart is as follows:
 
     Usage: 
          GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
-                          -cv [CV] -a [ACC] -d [DELTA] -is [INTIAL SNPs] -ss [SEL_SNPS] 
-                          -gpu [GPU_USE] -all [ALL_SNPs] -t [TIME]
+                          -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
+                          -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
 
     Description of arguments:
-         -m METHOD,        Selection method (RRblup, RF, or RRblup_RF).
-         -g GENO,          Genotype file (Essential)
-         -p PHENO,         Phenotype file (Essential)
-         -gw GWAS,         GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally.
-         -i INFO,          Marker information file. Required if GWAS file is not provided (Optional; Default NULL)
-         -pre PRESET,      Marker list to be selected in advance (Optional; Default NULL)  
-         -cv CV,           The number of cross validation (Default 3)
-         -a ACC,           Goal of correlation rate (Default 0.9)
-         -d DELTA,         Increament of correlation rate for selection (Default 0.001)
-         -is INITIAL_SNPS, The number of initial markers to be selected (>=2) (Default 5)
-         -ss SEL_SNPS,     The number of markers to be selected at one time (Default 1)
-         -gpu GPU_USE,     If TRUE, RR-BLUP is calculated using GPU (Default FALSE)
-         -all ALL_SNPs,  If TRUE, correlation rates of all markers for validation sets is calculated, but it takes a lot of time (Default FALSE)
-         -t TIME,          Runtime cut-off for each CV (Default 1)
+         -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
+         -g GENO,           Genotype file (Essential).
+         -p PHENO,          Phenotype file (Essential).
+         -gw GWAS,          GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally (Essential or optional).
+         -i INFO,           Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
+         -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
+         -cv CV,            The number of cross validation (Default 3).
+         -a ACC,            Goal of correlation rate (Default 0.9).
+         -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.001).
+         -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
+         -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
+         -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
+         -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
+         -t TIME,           Runtime cut-off per each CV (Default 1 hour).
 
 
 
@@ -97,6 +97,19 @@ The flow-chart is as follows:
 
   #### 3-3. Final modeling phase
   
+    Usage: 
+         GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
+
+    Description of arguments:
+         -m MODEL,        Prediction model (RRblup, RF, DNN, or CNN).
+         -d DIR,          Result directory of marker selection (Essential).
+         -gw GWAS,        GWAS result file. If GWAS file is not provided, marker information file should be provided (Essential or optional).
+         -i INFO,         Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
+         -pe PERMUTATION, The number of permutations per each modeling (Default 50)  
+         -gpu GPU_USAGE,  If TRUE, DNN and CNN are calculated using GPU (Default FALSE)
+         -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour)
+
+
 
     Example of final modeling
     
@@ -112,7 +125,7 @@ The flow-chart is as follows:
                          
                      -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
                                                                            
-                     -t 1                                 # Computational time for each each modeling
+                     -t 1                                 # Runtime cut-off for permutatios of each modeling
                      
   
   
