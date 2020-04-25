@@ -105,9 +105,9 @@ The flow-chart is as follows:
          -d DIR,          Result directory of marker selection (Essential).
          -gw GWAS,        GWAS result file. If GWAS file is not provided, marker information file should be provided (Essential or optional).
          -i INFO,         Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
-         -pe PERMUTATION, The number of permutations per each modeling (Default 50)  
-         -gpu GPU_USAGE,  If TRUE, DNN and CNN are calculated using GPU (Default FALSE)
-         -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour)
+         -pe PERMUTATION, The number of permutations per each modeling (Default 50).
+         -gpu GPU_USAGE,  If TRUE, DNN and CNN are calculated using GPU (Default FALSE).
+         -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour).
 
 
 
