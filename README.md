@@ -10,29 +10,43 @@ This analysis pipeline uses a VCF file as input file and performs a genome-wide 
 Source code was written in Python and R languages and supported on windows and linux platforms.
 
 
-## 2. Flow-chart of GAPIT pipeline
+## 2. Flow-chart of GMStool
 
 The flow-chart is as follows:
 
+![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
 
 
-## 3. Usage
-
-Usage: run_gapit.R -g [GENO] -p [PHENO] -o [PREFIX] -maf [MAF] -ms [MISSING]
+## 3. Preparation phase
 
 
 
-    Example: Rscript run_gapit.R \
+
+
+## 4. Marker selection phase
+
+Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             \
+                        -is [Initial Marker] -pre [Preset Marker] \
+                        -cv [CV] -ss [Number of selected SNPs
+
+
+    Example: Rscript GMStools.MS.v1.R \   
     
-                         -g ExampleData/Test_sample_429_geno.vcf.gz \   # VCF file
+                         -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
                          
-                         -p ExampleData/Test_sample_429_pheno.txt \     # Phenotype file
+                         -g ExampleData/Ex_genotype.txt \     # Genotype file
                          
-                         -o GWAS_results \                              # Output directory
+                         -p ExampleData/Ex_phenotype.txt \    # Phenotype file
                          
-                         -maf 0.05 \                                    # Minor allele frequency cut-off
+                         -gw ExampleData/Ex_gwas.txt \        # GWAS result file
                          
-                         -ms 0.1                                        # Variant missing rate cut-off
+                         -cv 3 \                              # Cross validation value
+                         
+                         -a 0.9 \                             # Target accuracy 
+                          
+                         -is 5 \                              # The number of initial SNPs
+                                                 
+                         -t 4                                 # Computational time for each CV
 
 
 ## 4. Results
