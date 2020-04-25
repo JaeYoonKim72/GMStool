@@ -5,7 +5,7 @@
 
   - GMStool is a tool of selecting an optimal marker-set for predicting a phenotype. 
   - This tool is based on genome-wide association study, and heuristically searches optimal markers for the phenotype prediction through statistic and machine-learning methods (RR-BLUP and Random forest). Then, it performs genomic predictions using several statistical and machine/deep learning models (RR-BLUP, Random forest, DNN, and CNN) and finally presents the best prediction model with the optimal marker-set. 
-  - GMStool consists of three phases, preparation, marker selection, and final modeling. In the preparation phase, GMStool prepares genotype, phenotype, and GWAS result files. Optimal markers are selected in the marker selectinon phase, and final prediction using the optimal marker-set is conducted in the final modeling phase.
+  - GMStool consists of three phases, preparation, marker selection, and final modeling. Three input files, genotype, phenotype, and GWAS result files, are prepared in the preparation phase, and optimal markers are then selected in the marker selectinon phase. Last, final prediction using the optimal marker-set is conducted in the final modeling phase.
   
   
 ## 2. Flow-chart
