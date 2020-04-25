@@ -31,7 +31,8 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
                         -cv [CV] -ss [Number of selected SNPs
 
 
-    Example of non-multithreading
+    Example of marker selection not using multithreading
+    
         Rscript GMStools.MS.v1.R \   
     
                      -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
@@ -51,7 +52,9 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
                      -t 4                                 # Computational time for each CV
 
 
-    Example of multithreading
+
+    Example of marker selection using multithreading
+    
         Rscript GMStools.MS.MultiThreading.v1.R \   
     
                      -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
@@ -69,13 +72,15 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
                      -is 5 \                              # The number of initial SNPs
                                                  
                      -t 4                                 # Computational time for each CV
-
+                     
+                     
 
 
   #### 3-3. Final modeling phase
   
 
     Example of final modeling
+    
         Rscript GMStools.FM.v1.R \   
     
                      -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
@@ -89,6 +94,7 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
                      -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
                                                                            
                      -t 1                                 # Computational time for each each modeling
+                     
   
   
   
