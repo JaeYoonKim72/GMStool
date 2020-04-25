@@ -52,7 +52,7 @@
              -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
              -t TIME,           Runtime cut-off per each CV (Default 1 hour).
   
-    - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
+  - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
   - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
   - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
   - -i option means the marker information file, and is used when the -gw option is not given. 
@@ -68,19 +68,28 @@
   
   
         Example of marker selection not using multithreading:
+        
               Rscript GMStools.MS.v1.R \   
-                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)              
+                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF) 
+                     
                      -g ExampleData/Ex_genotype.txt \     # Genotype file
+                     
                      -p ExampleData/Ex_phenotype.txt \    # Phenotype file
+                     
                      -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                     
                      -cv 3 \                              # Cross validation value
+                     
                      -a 0.9 \                             # Target accuracy 
+                     
                      -is 5 \                              # The number of initial SNPs
+                     
                      -t 4                                 # Computational time for each CV
 
 
 
-        Example of marker selection using multithreading
+
+        Example of marker selection using multithreading:
     
           Rscript GMStools.MS.MultiThreading.v1.R \   
     
