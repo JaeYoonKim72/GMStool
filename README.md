@@ -39,8 +39,11 @@
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
   - -a option specifies the target accuracy of the markers to be selected.
-  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the incremental value.
-  - -is option 
+  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the increment value.
+  - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
+  - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
+  - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
+  - -all option 
   
   
     Usage: 
