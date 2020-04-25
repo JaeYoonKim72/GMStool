@@ -43,7 +43,7 @@
   - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
   - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
   - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
-  - -all option 
+  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. 
   
   
     Usage: 
