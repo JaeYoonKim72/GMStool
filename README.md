@@ -26,9 +26,25 @@ The flow-chart is as follows:
 
   #### 3-2. Marker selection phase
 
-Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             \
-                        -is [Initial Marker] -pre [Preset Marker] \
-                        -cv [CV] -ss [Number of selected SNPs
+Usage: GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [Preset SNPs] 
+                        -cv [CV] -a [ACC] -d [INCREMENT] -is [Initial SNPs] -ss [Selected_SNPS] 
+                        -gpu [GPU_Usage] -all [ALL_SNPs] -t [TIME]
+
+Description of arguments:
+     -m METHOD,        Selection method (RRblup, RF, or RRblup_RF).
+     -g GENO,          Genotype file (Essential)
+     -p PHENO,         Phenotype file (Essential)
+     -gw GWAS,         GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally.
+     -i INFO,          Marker information file. Required if GWAS file is not provided (Optional; Default NULL)
+     -pre PRESET,      Marker list to be selected in advance (Optional; Default NULL)
+     -cv CV,           The number of cross validation (Default 3)
+     -a ACC,           Goal of correlation rate (Default 0.9)
+     -d DELTA,         Increament of correlation rate for selection (Default 0.001)
+     -is INITIAL_SNPS, The number of initial markers to be selected (>=2) (Default 5)
+     -ss SEL_SNPS,     The number of markers to be selected at one time (Default 1)
+     -gpu GPU_USE,     If TRUE, RR-BLUP is calculated using GPU (Default FALSE)
+     -all ALL_MARKER,  If TRUE, correlation rates of all markers for validation sets is calculated, but it takes a lot of time (Default FALSE)
+     -t TIME,          Runtime cut-off for each CV (Default 1)
 
 
     Example of marker selection not using multithreading
