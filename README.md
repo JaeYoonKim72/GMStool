@@ -18,13 +18,13 @@ The flow-chart is as follows:
 
 
 ## 3. Run of GMStool
-  ### 3-1. Preparation phase
+  #### 3-1. Preparation phase
 
 
 
 
 
-## 4. Marker selection phase
+  #### 3-2. Marker selection phase
 
 Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             \
                         -is [Initial Marker] -pre [Preset Marker] \
