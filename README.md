@@ -32,8 +32,8 @@
 
   #### 3-2. Marker selection phase
 
-
-
+  - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two run scripts is whether multithreading is performed. All other options are identical.
+  - 
 
 
     Usage: 
@@ -173,4 +173,4 @@ likemun@gmail.com
 
 ## 7. Citation
 
-Pulication is under review.
+- Paper is under review.
