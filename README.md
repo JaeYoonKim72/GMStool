@@ -5,7 +5,7 @@
 
   - GMStool is a tool of selecting an optimal marker-set for predicting a phenotype. 
   - This tool is based on genome-wide association study, and heuristically searches optimal markers for the phenotype prediction through statistic and machine-learning methods (RR-BLUP and Random forest). Then, it performs genomic predictions using several statistical and machine/deep learning models (RR-BLUP, Random forest, DNN, and CNN) and finally presents the best prediction model with the optimal marker-set. 
-  - GMStool consists of three phases, preparation, marker selection, and final modeling. Three input files, genotype, phenotype, and GWAS result files, are prepared in the preparation phase, and optimal markers are then selected in the marker selectinon phase. Last, final prediction using the optimal marker-set is conducted in the final modeling phase.
+  - GMStool consists of three phases, preparation, marker selection, and final modeling. Three input files, genotype, phenotype, and GWAS result files, are prepared in the preparation phase, and optimal markers are then selected in the marker selectinon phase ("GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts). Last, final prediction using the optimal marker-set is conducted in the final modeling phase ("GMStools.FM.v1.R" script).
   
   
 ## 2. Flow-chart
@@ -20,7 +20,7 @@
  - GMStool essentially requires three input files, genotype, phenotype, and GWAS result files. Preset file is optional.
  - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
- - "GWAS result file" consists of SNPIDs (marker name), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
+ - "GWAS result file" consists of SNPIDs (marker names), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
  - If "GWAS result file" is not provided by the user, GMStool internally calculates marker effects to be used for marker selection. In this case, a "marker information file" composed of SNPID, chromosome number, and physical position columns must be provided (-i option). However, it is recommended to provide a separate GWAS result file with -gw option to GMStool.
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
@@ -31,6 +31,10 @@
 
 
   #### 3-2. Marker selection phase
+
+
+
+
 
     Usage: 
          GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
