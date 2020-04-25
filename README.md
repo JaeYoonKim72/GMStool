@@ -17,7 +17,8 @@ The flow-chart is as follows:
 ![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
 
 
-## 3. Preparation phase
+## 3. Run of GMStool
+  # 3-1. Preparation phase
 
 
 
