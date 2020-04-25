@@ -66,8 +66,9 @@
   - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
   - -t option 
   
+  - The actual example using two scripts is as follows:
   
-        Example of marker selection not using multithreading:
+        1) Example of marker selection not using multithreading
         
               Rscript GMStools.MS.v1.R \   
                      -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF) 
@@ -87,9 +88,7 @@
                      -t 4                                 # Computational time for each CV
 
 
-
-
-        Example of marker selection using multithreading:
+        2) Example of marker selection using multithreading:
     
           Rscript GMStools.MS.MultiThreading.v1.R \   
     
