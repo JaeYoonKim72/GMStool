@@ -1,0 +1,48 @@
+CV Number 3: Start
+CV Number 3: Check prediction (correlation) rate for all markers using RRblup model.
+CV Number 3: Prediction (correlation) rate for all markers using RRblup is 0.659275191731656
+CV Number 3: Prediction running time for all markers is 1.152187 secs
+CV Number 3: Initial marker set's prediction (correlation) rate is 0.1427
+CV Number 3: Start marker selection at 2020-04-24 23:10:51 KST
+Add: 0.491836 (delta: 0.349136), time: 0.4641514 secs
+Add: 0.602037 (delta: 0.110202), time: 2.178326 secs
+Add: 0.645013 (delta: 0.042976), time: 3.63526 secs
+Add: 0.649788 (delta: 0.004774), time: 3.807445 secs
+Add: 0.667487 (delta: 0.017699), time: 4.894992 secs
+Add: 0.689511 (delta: 0.022024), time: 6.798093 secs
+Add: 0.691368 (delta: 0.001858), time: 19.04661 secs
+Add: 0.716248 (delta: 0.024879), time: 19.68622 secs
+Add: 0.734112 (delta: 0.017864), time: 19.93354 secs
+Add: 0.764166 (delta: 0.030054), time: 20.19471 secs
+Add: 0.78394 (delta: 0.019773), time: 21.35186 secs
+Add: 0.798337 (delta: 0.014397), time: 21.83542 secs
+Add: 0.804906 (delta: 0.006569), time: 24.15235 secs
+Add: 0.809564 (delta: 0.004658), time: 26.09414 secs
+Add: 0.820109 (delta: 0.010546), time: 28.52762 secs
+Add: 0.831996 (delta: 0.011887), time: 29.21996 secs
+Add: 0.833368 (delta: 0.001371), time: 30.61409 secs
+Add: 0.83871 (delta: 0.005342), time: 31.29112 secs
+Add: 0.840818 (delta: 0.002108), time: 31.81232 secs
+Add: 0.844029 (delta: 0.003211), time: 34.00037 secs
+Add: 0.845065 (delta: 0.001036), time: 34.88965 secs
+Add: 0.855858 (delta: 0.010793), time: 38.35856 secs
+Add: 0.85843 (delta: 0.002572), time: 39.53961 secs
+Add: 0.867852 (delta: 0.009422), time: 39.89515 secs
+Add: 0.871341 (delta: 0.003489), time: 40.55176 secs
+Add: 0.874682 (delta: 0.003341), time: 45.13926 secs
+Add: 0.876296 (delta: 0.001615), time: 47.58652 secs
+Add: 0.880283 (delta: 0.003986), time: 47.79213 secs
+Add: 0.883342 (delta: 0.003059), time: 48.70964 secs
+Add: 0.887636 (delta: 0.004295), time: 49.92242 secs
+Add: 0.889386 (delta: 0.00175), time: 50.47034 secs
+Add: 0.893096 (delta: 0.00371), time: 51.72887 secs
+Add: 0.894134 (delta: 0.001038), time: 57.68141 secs
+Add: 0.896428 (delta: 0.002294), time: 1.148332 mins
+Add: 0.897645 (delta: 0.001217), time: 1.163675 mins
+Add: 0.898737 (delta: 0.001091), time: 1.195991 mins
+Add: 0.90177 (delta: 0.003033), time: 1.242123 mins
+CV Number 3: # of selected markers is 41, and correlation rate is 0.901769578914366
+CV Number 3: Running time for marker selection is 1.272107 mins
+CV Number 3: End RRblup model.
+
+

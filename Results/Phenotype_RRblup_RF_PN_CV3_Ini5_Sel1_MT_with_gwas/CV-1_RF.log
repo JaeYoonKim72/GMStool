@@ -1,0 +1,57 @@
+CV Number 1: Start
+CV Number 1: Check prediction (correlation) rate for all markers using RF model.
+CV Number 1: Prediction (correlation) rate for all markers using RF is 0.722137027237758
+CV Number 1: Prediction running time for all markers is 9.320233 secs
+CV Number 1: Initial marker set's prediction (correlation) rate is 0.019781
+CV Number 1: Start marker selection at 2020-04-24 23:12:15 KST
+Add: 0.328746 (delta: 0.308965), time: 0.2687607 secs
+Add: 0.349495 (delta: 0.020749), time: 1.156114 secs
+Add: 0.622739 (delta: 0.273244), time: 1.385699 secs
+Add: 0.625253 (delta: 0.002515), time: 1.634249 secs
+Add: 0.688419 (delta: 0.063166), time: 2.914077 secs
+Add: 0.689827 (delta: 0.001408), time: 3.17566 secs
+Add: 0.692695 (delta: 0.002868), time: 3.457807 secs
+Add: 0.695804 (delta: 0.003108), time: 5.235402 secs
+Add: 0.711722 (delta: 0.015918), time: 5.552766 secs
+Add: 0.7173 (delta: 0.005578), time: 5.874038 secs
+Add: 0.718586 (delta: 0.001286), time: 6.531532 secs
+Add: 0.722659 (delta: 0.004073), time: 8.933849 secs
+Add: 0.730356 (delta: 0.007697), time: 12.10088 secs
+Add: 0.731918 (delta: 0.001562), time: 12.80986 secs
+Add: 0.733359 (delta: 0.001441), time: 13.1809 secs
+Add: 0.74032 (delta: 0.006961), time: 17.79988 secs
+Add: 0.774867 (delta: 0.034547), time: 19.00386 secs
+Add: 0.777572 (delta: 0.002705), time: 19.41224 secs
+Add: 0.779886 (delta: 0.002315), time: 20.69988 secs
+Add: 0.781956 (delta: 0.00207), time: 24.67506 secs
+Add: 0.786866 (delta: 0.00491), time: 26.09404 secs
+Add: 0.797074 (delta: 0.010207), time: 28.53644 secs
+Add: 0.807544 (delta: 0.01047), time: 30.57376 secs
+Add: 0.808898 (delta: 0.001354), time: 31.09353 secs
+Add: 0.811351 (delta: 0.002454), time: 33.20002 secs
+Add: 0.834436 (delta: 0.023085), time: 43.83507 secs
+Add: 0.837911 (delta: 0.003475), time: 49.86063 secs
+Add: 0.842208 (delta: 0.004296), time: 52.12485 secs
+Add: 0.843382 (delta: 0.001175), time: 55.01363 secs
+Add: 0.847139 (delta: 0.003757), time: 1.024326 mins
+Add: 0.851174 (delta: 0.004035), time: 1.044128 mins
+Add: 0.854005 (delta: 0.002831), time: 1.439903 mins
+Add: 0.855876 (delta: 0.001871), time: 2.239164 mins
+Add: 0.85903 (delta: 0.003154), time: 2.784079 mins
+Add: 0.86097 (delta: 0.001941), time: 2.838497 mins
+Add: 0.864307 (delta: 0.003337), time: 2.849689 mins
+Add: 0.865642 (delta: 0.001335), time: 2.88347 mins
+Add: 0.870123 (delta: 0.004481), time: 3.031534 mins
+Add: 0.872774 (delta: 0.002651), time: 3.067117 mins
+Add: 0.874268 (delta: 0.001494), time: 3.198776 mins
+Add: 0.88347 (delta: 0.009202), time: 3.466732 mins
+Add: 0.888604 (delta: 0.005134), time: 4.200773 mins
+Add: 0.892698 (delta: 0.004094), time: 6.612578 mins
+Add: 0.898153 (delta: 0.005456), time: 6.625588 mins
+Add: 0.899302 (delta: 0.001148), time: 6.651951 mins
+Add: 0.904711 (delta: 0.005409), time: 6.81605 mins
+CV Number 1: # of selected markers is 51, and correlation rate is 0.90471094741625
+CV Number 1: Running time for marker selection is 6.980829 mins
+CV Number 1: End RF model.
+
+
