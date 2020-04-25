@@ -52,7 +52,7 @@ The flow-chart is as follows:
 
     Example of marker selection not using multithreading
     
-        Rscript GMStools.MS.v1.R \   
+          Rscript GMStools.MS.v1.R \   
     
                      -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
                          
@@ -74,7 +74,7 @@ The flow-chart is as follows:
 
     Example of marker selection using multithreading
     
-        Rscript GMStools.MS.MultiThreading.v1.R \   
+          Rscript GMStools.MS.MultiThreading.v1.R \   
     
                      -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
                          
