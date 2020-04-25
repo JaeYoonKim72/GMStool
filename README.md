@@ -75,6 +75,7 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
   #### 3-3. Final modeling phase
   
 
+    Example of final modeling
         Rscript GMStools.FM.v1.R \   
     
                      -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
