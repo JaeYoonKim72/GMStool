@@ -21,7 +21,6 @@
  - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
  - "GWAS result file" consists of SNPIDs (marker names), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
- - If "GWAS result file" is not provided by the user, GMStool internally calculates marker effects to be used for marker selection. In this case, a "marker information file" composed of SNPID, chromosome number, and physical position columns must be provided (-i option). However, it is recommended to provide a separate GWAS result file with -gw option to GMStool.
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
 
@@ -35,6 +34,9 @@
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are identical.
   - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
   - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
+  - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
+  - -i option means the marker information file, and is used when the -gw option is not given. 
+
 
 
     Usage: 
