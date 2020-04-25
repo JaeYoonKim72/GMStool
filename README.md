@@ -129,9 +129,11 @@ The flow-chart is as follows:
                                                                            
                      -t 1                                 # Runtime cut-off for permutatios of each modeling
                      
+                     
+   #### 3-4. Running screen            
   
-![그림5](https://user-images.githubusercontent.com/49300659/80275664-c65ce700-871d-11ea-842c-2ce94cd8a973.jpg)
-
+  
+![그림5](https://user-images.githubusercontent.com/49300659/80275712-0754fb80-871e-11ea-8df3-01e375c511fd.jpg)
 
   
 
