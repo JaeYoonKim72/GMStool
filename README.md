@@ -7,6 +7,7 @@
   - GMStool is a tool of selecting an optimal marker-set for predicting a phenotype. 
   - This tool is based on genome-wide association study, and heuristically searches optimal markers for the phenotype prediction through statistic and machine-learning methods (RR-BLUP and Random forest). Then, it performs genomic predictions using several statistical and machine/deep learning models (RR-BLUP, Random forest, DNN, and CNN) and finally presents the best prediction model with the optimal marker-set. 
   - GMStool consists of three phases, preparation, marker selection, and final modeling. Three input files, genotype, phenotype, and GWAS result files, are prepared in the preparation phase, and optimal markers are then selected in the marker selectinon phase ("GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts). Last, final prediction using the optimal marker-set is conducted in the final modeling phase ("GMStools.FM.v1.R" script).
+  - GMStool supports both linux and windows platforms.
   
   
 ## 2. Flow-chart
@@ -28,9 +29,9 @@
 
   #### 3-2. Marker selection phase
 
-  - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are identical.
+  - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are the same, and usage and detailed options are as follows.
   
-    
+  
         Usage: 
             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
                              -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
@@ -52,7 +53,8 @@
              -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
              -t TIME,           Runtime cut-off per each CV (Default 1 hour).
   
-  - -m option specifies the selection method to be used, and RRblup and RF can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
+  
+  - -m option specifies the selection method to be used, and "RRblup" and "RF" can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
   - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
   - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
   - -i option means the marker information file, and is used when the -gw option is not given. 
@@ -64,7 +66,7 @@
   - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
   - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
   - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
-  - -t option 
+  - -t option means the maximum calculation time allowed per CV. The unit of time is hour(s).
   
   - The actual examples of two scripts are as follows:
   
