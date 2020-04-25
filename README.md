@@ -85,7 +85,7 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
     
                      -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
                          
-                     -d Results/Phenotype_RRblup_RF_PN_CV3_Ini5_Sel1_with_gwas/   # The path of result directory of marker selection
+                     -d Results/Phenotype_RRblup_RF_PN_CV3_Ini5_Sel1_with_gwas/ \ # The path of result directory of marker selection
                          
                      -gw ExampleData/Ex_gwas.txt \        # GWAS result file
                          
