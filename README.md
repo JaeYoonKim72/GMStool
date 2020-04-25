@@ -26,10 +26,10 @@ The flow-chart is as follows:
 
   #### 3-2. Marker selection phase
 
-    Usage: GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
-                            -cv [CV] -a [ACC] -d [DELTA] -is [INTIAL SNPs] -ss [SEL_SNPS] 
-                            -gpu [GPU_USE] -all [ALL_SNPs] -t [TIME]
-
+    Usage: 
+         GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
+                          -cv [CV] -a [ACC] -d [DELTA] -is [INTIAL SNPs] -ss [SEL_SNPS] 
+                          -gpu [GPU_USE] -all [ALL_SNPs] -t [TIME]
 
     Description of arguments:
          -m METHOD,        Selection method (RRblup, RF, or RRblup_RF).
@@ -46,6 +46,7 @@ The flow-chart is as follows:
          -gpu GPU_USE,     If TRUE, RR-BLUP is calculated using GPU (Default FALSE)
          -all ALL_SNPs,  If TRUE, correlation rates of all markers for validation sets is calculated, but it takes a lot of time (Default FALSE)
          -t TIME,          Runtime cut-off for each CV (Default 1)
+
 
 
 
