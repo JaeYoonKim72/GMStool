@@ -3,16 +3,12 @@
 
 ## 1. Introduction
 
-GWAS GAPIT pipeline was based on GAPIT libaraies developed by Lipka and Tang, and constructed by Jae-Yoon Kim.
-
-This analysis pipeline uses a VCF file as input file and performs a genome-wide association study.
-
-Source code was written in Python and R languages and supported on windows and linux platforms.
-
-
+  - GMStool is based on genome-wide association study, and heuristically searches optimal markers for the phenotype prediction through statistic and machine-learning methods (RR-BLUP and Random forest). Then, this tool performs genomic prediction using several statistical and machine/deep learning models (RR-BLUP, Random forest, DNN, and CNN) and finally presents the best prediction model with the optimal marker-set. 
+  - GMStool consists of three phases, preparation, marker selection, and final modeling. 
+  
 ## 2. Flow-chart
 
-The flow-chart is as follows:
+  - Flow-chart of GMStool is as follows:
 
 ![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
 
