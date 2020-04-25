@@ -66,7 +66,7 @@
   - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
   - -t option 
   
-  - The actual example using two scripts is as follows:
+  - The actual examples of two scripts are as follows:
   
         1) Example of marker selection not using multithreading
         
