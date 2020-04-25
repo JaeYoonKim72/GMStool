@@ -72,6 +72,26 @@ Usage: GMStools.MS.v1.R -m [Method] -g [GENO] -p [PHENO] -gw [GWAS]             
 
 
 
+  #### 3-3. Final modeling phase
+  
+
+        Rscript GMStools.FM.v1.R \   
+    
+                     -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
+                         
+                     -d Results/Phenotype_RRblup_RF_PN_CV3_Ini5_Sel1_with_gwas/   # The path of result directory of marker selection
+                         
+                     -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                         
+                     -pe 50 \                             # The number of permutations for each modeling
+                         
+                     -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
+                                                                           
+                     -t 1                                 # Computational time for each each modeling
+  
+  
+  
+
 ## 4. Results
 
 Result files are provided with a total of 25 files including a result table and the following 3 images.
