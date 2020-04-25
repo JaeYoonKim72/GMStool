@@ -4,4 +4,5 @@
 Before using the example file, extract the "Ex_genotype.zip" file.
 
 
-![그림222222](https://user-images.githubusercontent.com/49300659/80274654-feacf700-8716-11ea-8f4b-dc2f9041abae.jpg)
+![그림199](https://user-images.githubusercontent.com/49300659/80277101-bb0eb900-8727-11ea-9179-e3b8f5b699d0.jpg)
+
