@@ -36,8 +36,10 @@
   - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
   - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RR-BLUP is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the RR-BLUP model. Also, when RF is selected, variable importance values of the RF model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
   - -i option means the marker information file, and is used when the -gw option is not given. 
-
-
+  - -pre option specifies markers that must be selected.
+  - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
+  
+  
 
     Usage: 
          GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
