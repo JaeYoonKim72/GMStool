@@ -21,8 +21,7 @@ The flow-chart is as follows:
   #### 3-1. Preparation phase
 
 
-![그림1222](https://user-images.githubusercontent.com/49300659/80273432-e89a3900-870c-11ea-8f20-7e885f0ef8d5.png)
-
+![그림111111111](https://user-images.githubusercontent.com/49300659/80273485-57779200-870d-11ea-8cd0-1297dd98b052.jpg)
 
 
 
