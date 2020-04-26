@@ -115,6 +115,8 @@
 
   #### 3-3. Final modeling phase
   
+    - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
+  
     Usage: 
          GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
 
