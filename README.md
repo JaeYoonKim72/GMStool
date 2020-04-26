@@ -194,8 +194,9 @@
   - The summary file of the final modeling shows the final accuracies of the models on the test-set.
   - The information file of selected markers shows the chromosome, physical position, and GWAS p-value information of the selected markers.
   - The predicted phenotype file consists of the observed phenotype values and the phenotype values predicted from the best prediction model.
-  - The chromosomal distribution plot shows 
-  
+  - The chromosomal distribution plot shows the distribution of selected markers according to chromosomes.
+  - The correlation plot shows the relationship between observed and predicted phenotype values.
+  - The plots below are the representative result files derived from the actual examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRblup_selected_markers_Info.txt", "Best_final_RRblup_predPhenotype_list_146m_82c.txt", "Best_final_RRblup_selected_markers_Chromosomal_distribution.png", and "Best_final_RRblup_predPhenotype_plot.png").
     
   ![그림8888881](https://user-images.githubusercontent.com/49300659/80305778-fe395c80-87f9-11ea-97f5-ea46a0cbc9bf.jpg)
 
