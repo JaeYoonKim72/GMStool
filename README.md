@@ -117,17 +117,17 @@
 
   - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
   
-    Usage: 
-         GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
+        Usage: 
+            GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
 
-    Description of arguments:
-         -m MODEL,        Prediction model (RRblup, RF, DNN, or CNN).
-         -d DIR,          Result directory of marker selection (Essential).
-         -gw GWAS,        GWAS result file. If GWAS file is not provided, marker information file should be provided (Essential or optional).
-         -i INFO,         Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
-         -pe PERMUTATION, The number of permutations per each modeling (Default 50).
-         -gpu GPU_USAGE,  If TRUE, DNN and CNN are calculated using GPU (Default FALSE).
-         -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour).
+        Description of arguments:
+             -m MODEL,        Prediction model (RRblup, RF, DNN, or CNN).
+             -d DIR,          Result directory of marker selection (Essential).
+             -gw GWAS,        GWAS result file. If GWAS file is not provided, marker information file should be provided (Essential or optional).
+             -i INFO,         Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
+             -pe PERMUTATION, The number of permutations per each modeling (Default 50).
+             -gpu GPU_USAGE,  If TRUE, DNN and CNN are calculated using GPU (Default FALSE).
+             -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour).
 
 
   - -m option specifies the prediction model to be used. "RRblup", "RF", "DNN", and "CNN" can be selected. If you want to use more than one model, put "_" between the methods and specify the -m option as like "RRblup_DNN" or "RRblup_RF_DNN_CNN".
