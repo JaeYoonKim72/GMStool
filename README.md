@@ -162,11 +162,11 @@
                      
    #### 3-4. Running screen            
   
-  
+    - The running screens of actual examples for marker selection and final modeling are shown in below. Due to the image size constraint, the running screens were edited at the beginning and end.
+    
 ![그림5](https://user-images.githubusercontent.com/49300659/80275712-0754fb80-871e-11ea-8df3-01e375c511fd.jpg)
 
   
-
 ## 4. Results
 
   #### 4-1. Marker selection phase
