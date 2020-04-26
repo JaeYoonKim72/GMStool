@@ -9,15 +9,21 @@
   - GMStool consists of three phases, preparation, marker selection, and final modeling. Three input files, genotype, phenotype, and GWAS result files, are prepared in the preparation phase, and optimal markers are then selected in the marker selectinon phase ("GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts). Last, final prediction using the optimal marker-set is conducted in the final modeling phase ("GMStools.FM.v1.R" script).
   - GMStool supports both linux and windows platforms.
   
-  
-## 2. Flow-chart
+
+## 3. Download
+  - git clone https://github.com/JaeYoonKim72/GMStool
+  or
+  - git clone https://github.com/lovemun/GMStool
+
+
+## 3. Flow-chart
   - Flow-chart of GMStool is as follows:
 
 ![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
 
 
-## 3. Run
-  #### 3-1. Preparation phase
+## 4. Run
+  #### 4-1. Preparation phase
  - GMStool essentially requires three input files, genotype, phenotype, and GWAS result files. Preset file is optional.
  - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
@@ -27,7 +33,7 @@
 ![그림111111111](https://user-images.githubusercontent.com/49300659/80273485-57779200-870d-11ea-8cd0-1297dd98b052.jpg)
 
 
-  #### 3-2. Marker selection phase
+  #### 4-2. Marker selection phase
 
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are the same, and usage and detailed options are as follows.
   
@@ -113,7 +119,7 @@
                      
 
 
-  #### 3-3. Final modeling phase
+  #### 4-3. Final modeling phase
 
   - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
   
@@ -160,7 +166,7 @@
                      
                      
                      
-   #### 3-4. Running screen            
+   #### 4-4. Running screen            
   
    - The running screens of actual examples are shown in below. 
    - Due to the image size constraint, the plots below show only the beginning and end of the screens.
@@ -168,32 +174,32 @@
 ![그림5](https://user-images.githubusercontent.com/49300659/80275712-0754fb80-871e-11ea-8df3-01e375c511fd.jpg)
 
   
-## 4. Results
+## 5. Results
 
-  #### 4-1. Marker selection phase
+  #### 5-1. Marker selection phase
   
   ![re1](https://user-images.githubusercontent.com/49300659/80275083-fa360d80-8719-11ea-960c-bb9c7ef82dc1.jpg)
 
 
-  #### 4-2. Final modeling phase
+  #### 5-2. Final modeling phase
   
   ![re12](https://user-images.githubusercontent.com/49300659/80275247-02db1380-871b-11ea-86f0-dc1c0b6b696a.jpg)
   ![re123](https://user-images.githubusercontent.com/49300659/80275249-04a4d700-871b-11ea-898d-0db4e7d1d0e5.jpg)
 
-## 5. Requirement
+## 6. Requirement
 
 GMStool basically requires R version 3.6.1 or higher, and needs 13 additional libraries.
 
 - data.table, tidyverse, ggplot2, ggpmisc, caret, randomForest, rrBLUP, tensorflow, keras, gpuR, doParallel, foreach, and iterators
 
 
-## 6. Contact
+## 7. Contact
 
 jaeyoonkim72@gmail.com
 
 likemun@gmail.com
 
 
-## 7. Citation
+## 8. Citation
 
 - Paper is under review.
