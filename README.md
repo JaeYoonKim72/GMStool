@@ -11,10 +11,8 @@
   
 
 ## 3. Download
+  - GMStool can be downloaded with one of the following two commands.
   - git clone https://github.com/JaeYoonKim72/GMStool
-  
-or
-
   - git clone https://github.com/lovemun/GMStool
 
 
