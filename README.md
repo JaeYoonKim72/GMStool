@@ -191,6 +191,11 @@
   #### 5-2. Final modeling phase
   
   - Representative result files in the final modeling phase are a summary file of the final modeling, a information file of the selected markers, a phenotype file predicted from the final model, a chromosomal distribution plot of the selected markers, and a correlation plot between the predicted and observed phenotypes.
+  - The summary file of the final modeling shows the final accuracies of the models on the test-set.
+  - The information file of selected markers shows the chromosome, physical position, and GWAS p-value information of the selected markers.
+  - The predicted phenotype file consists of the observed phenotype values and the phenotype values predicted from the best prediction model.
+  - The chromosomal distribution plot shows 
+  
     
   ![그림8888881](https://user-images.githubusercontent.com/49300659/80305778-fe395c80-87f9-11ea-97f5-ea46a0cbc9bf.jpg)
 
