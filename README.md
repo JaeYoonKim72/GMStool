@@ -175,6 +175,9 @@
   
 ## 5. Results
 
+  - For a detailed description of all result files, see https://github.com/JaeYoonKim72/GMStool/tree/master/Results.
+
+
   #### 5-1. Marker selection phase
   
   ![re1](https://user-images.githubusercontent.com/49300659/80275083-fa360d80-8719-11ea-960c-bb9c7ef82dc1.jpg)
