@@ -183,9 +183,9 @@
   - Representative result files in the marker selection phase are a summary file of all CVs and a list file of selected markers.
   - The summary file of all CVs contains the used methods, the numbers of train and test samples, the number of selected markers, the required time, and so on.
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers selected from a particular CV are marked with "1" for that CV.
-  - The plots below are the summary file of all CVs and the list file of selected markers in the result files of the actual examples ("CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt").
+  - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the actual examples ("CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt").
   
-  ![re1](https://user-images.githubusercontent.com/49300659/80275083-fa360d80-8719-11ea-960c-bb9c7ef82dc1.jpg)
+![그림77777771](https://user-images.githubusercontent.com/49300659/80305173-3b035480-87f6-11ea-85ef-c8abd8dff5a2.jpg)
 
 
   #### 5-2. Final modeling phase
