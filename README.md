@@ -10,7 +10,7 @@
   - GMStool supports both linux and windows platforms.
   
 
-## 3. Download
+## 2. Download
   - GMStool can be downloaded with one of the following two commands.
   - git clone https://github.com/JaeYoonKim72/GMStool
   - git clone https://github.com/lovemun/GMStool
@@ -140,9 +140,8 @@
   - -d option specifies the path of the result directory derived from the marker selection phase. Final modeling script loads the result files in this path and saves all of modeling result to this path.
   - -gw option specifies the identical gwas result file used in phases of preparation and marker selection. This option is used to generate a chromosomal distribution plot of selected markers. 
   - -i option means the marker information file, and is used when the -gw option is not given. If the GWAS result file was not provided in the marker selection phase and marker effects were calculated internally in GMStool, this marker information file must be provided to generate a chromosomal distribution plot of selected markers. 
-  - -pe option 
-
-  - -gpu option determines whether to use the GPU when calculating the DNN and CNN models. Depending on the GPU and system settings, it may not be possible in some computation environments.
+  - -pe option means the number of times to modeling per selected model. After modeling as much as the specified number of times, the model with the highest accuracy for validation-set is presented as the final model for application to the test-set.
+  - -gpu option determines whether to use the GPU when modeling DNN and CNN. Depending on the GPU and system settings, it may not be possible in some computation environments.
   - -t option means the maximum calculation time allowed per CV. The unit of time is hour(s).
 
   - The actual example of the final modeling script is as follows:
