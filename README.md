@@ -193,7 +193,8 @@
   - Representative result files in the final modeling phase are a summary file of the final modeling, a information file of the selected markers, a phenotype file predicted from the final model, a chromosomal distribution plot of the selected markers, and a correlation plot between the predicted and observed phenotypes.
     
   ![그림8888881](https://user-images.githubusercontent.com/49300659/80305778-fe395c80-87f9-11ea-97f5-ea46a0cbc9bf.jpg)
-  ![re123](https://user-images.githubusercontent.com/49300659/80275249-04a4d700-871b-11ea-898d-0db4e7d1d0e5.jpg)
+
+  ![919191919](https://user-images.githubusercontent.com/49300659/80305817-3e004400-87fa-11ea-81ee-803cb0887b1a.jpg)
 
 
 ## 6. Requirement
