@@ -12,7 +12,9 @@
 
 ## 3. Download
   - git clone https://github.com/JaeYoonKim72/GMStool
+  
 or
+
   - git clone https://github.com/lovemun/GMStool
 
 
