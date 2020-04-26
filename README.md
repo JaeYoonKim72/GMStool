@@ -180,6 +180,10 @@
 
   #### 5-1. Marker selection phase
   
+  - In the marker selection phase, representative results files are a summary of all CVs and a list of selected markers.
+  
+  - The plots below are "CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt" in the results file of the actual example.
+  
   ![re1](https://user-images.githubusercontent.com/49300659/80275083-fa360d80-8719-11ea-960c-bb9c7ef82dc1.jpg)
 
 
@@ -187,6 +191,7 @@
   
   ![re12](https://user-images.githubusercontent.com/49300659/80275247-02db1380-871b-11ea-86f0-dc1c0b6b696a.jpg)
   ![re123](https://user-images.githubusercontent.com/49300659/80275249-04a4d700-871b-11ea-898d-0db4e7d1d0e5.jpg)
+
 
 ## 6. Requirement
 
