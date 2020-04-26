@@ -114,8 +114,8 @@
 
 
   #### 3-3. Final modeling phase
-  
-    - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
+
+  - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
   
     Usage: 
          GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
@@ -130,10 +130,20 @@
          -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour).
 
 
+  - -m option specifies the prediction model to be used. "RRblup", "RF", "DNN", and "CNN" can be selected. If you want to use more than one model, put "_" between the methods and specify the -m option as like "RRblup_DNN" or "RRblup_RF_DNN_CNN".
+  - -d option specifies the path of the result directory derived from the marker selection phase. Final modeling script loads the result files in this path and saves all of modeling result to this path.
+  - -gw option specifies the identical gwas result file used in phases of preparation and marker selection. This option is used to generate a chromosomal distribution plot of selected markers. 
+  - -i option means the marker information file, and is used when the -gw option is not given. If the GWAS result file was not provided in the marker selection phase and marker effects were calculated internally in GMStool, this marker information file must be provided to generate a chromosomal distribution plot of selected markers. 
+  - -pe option 
 
-    Example of final modeling
+  - -gpu option determines whether to use the GPU when calculating the DNN and CNN models. Depending on the GPU and system settings, it may not be possible in some computation environments.
+  - -t option means the maximum calculation time allowed per CV. The unit of time is hour(s).
+
+  - The actual example of the final modeling script is as follows:
+
+        1) Example of final modeling
     
-        Rscript GMStools.FM.v1.R \   
+          Rscript GMStools.FM.v1.R \   
     
                      -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
                          
@@ -146,6 +156,8 @@
                      -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
                                                                            
                      -t 1                                 # Runtime cut-off for permutatios of each modeling
+                     
+                     
                      
                      
    #### 3-4. Running screen            
