@@ -74,7 +74,7 @@
   - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
   - -t option means the maximum calculation time allowed per CV. The unit of time is hour(s).
   
-  - The actual examples of two scripts are as follows:
+  - The actual examples of the marker selection phase are as follows:
   
         1) Example of marker selection not using multithreading
         
@@ -144,7 +144,7 @@
   - -gpu option determines whether to use the GPU when modeling DNN and CNN. Depending on the GPU and system settings, it may not be possible in some computation environments.
   - -t option means the maximum modeling time allowed per selected model. The unit of time is hour(s).
 
-  - The actual example of the final modeling script is as follows:
+  - The actual example of the final modeling phase is as follows:
 
         1) Example of final modeling
     
