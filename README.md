@@ -11,9 +11,11 @@
   
 
 ## 2. Download
-  - GMStool can be downloaded with one of the following two commands.
+  - Executable files of GMStool can be downloaded as the following command in linux and window.
   - git clone https://github.com/JaeYoonKim72/GMStool
-  - git clone https://github.com/lovemun/GMStool
+  
+  - R-package of GMStool can be downladed as the following command in R (refer to https://github.com/lovemun/GMStool).
+  - devtools::install_github("lovemun/GMStool")
 
 
 ## 3. Flow-chart
