@@ -21,7 +21,7 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
 ## 3. Flow-chart
   - Flow-chart of GMStool is as follows:
 
-![그림11111](https://user-images.githubusercontent.com/49300659/80271666-40c93f00-86fd-11ea-81f9-08dc33b51163.jpg)
+![피규1](https://user-images.githubusercontent.com/49300659/92703845-7c536580-f38d-11ea-8ae0-662cf658555c.png)
 
 
 ## 4. Run
@@ -32,7 +32,7 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
  - "GWAS result file" consists of SNPIDs (marker names), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
-![그림111111111](https://user-images.githubusercontent.com/49300659/80273485-57779200-870d-11ea-8cd0-1297dd98b052.jpg)
+![피규2](https://user-images.githubusercontent.com/49300659/92703903-870dfa80-f38d-11ea-9f72-e52a88a5fbf7.png)
 
 
   #### 4-2. Marker selection phase
@@ -172,8 +172,9 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
    - The running screens of actual examples are shown in below. 
    - Due to the image size constraint, the plots below show only the beginning and end of the screens.
     
-![123123123](https://user-images.githubusercontent.com/49300659/80304165-4dc65b00-87ef-11ea-8ee3-048351e3bbc2.jpg)
-
+![피규3-1](https://user-images.githubusercontent.com/49300659/92703964-92f9bc80-f38d-11ea-9fe6-8d4dc0c75ad4.png)
+![피규3-2](https://user-images.githubusercontent.com/49300659/92704007-99883400-f38d-11ea-99df-2d3806b17bb9.png)
+  
   
 ## 5. Results
 
@@ -187,7 +188,7 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers selected from a particular CV are marked with "1" for that CV.
   - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the actual examples ("CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt").
   
-![그림77777771](https://user-images.githubusercontent.com/49300659/80305173-3b035480-87f6-11ea-85ef-c8abd8dff5a2.jpg)
+![피규4](https://user-images.githubusercontent.com/49300659/92704141-b3c21200-f38d-11ea-889b-1df076581fe4.png)
 
 
   #### 5-2. Final modeling phase
@@ -200,9 +201,9 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
   - The correlation plot shows the relationship between observed and predicted phenotype values.
   - The plots below are the representative result files derived from the actual examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRblup_selected_markers_Info.txt", "Best_final_RRblup_predPhenotype_list_146m_82c.txt", "Best_final_RRblup_selected_markers_Chromosomal_distribution.png", and "Best_final_RRblup_predPhenotype_plot.png").
     
-  ![그림8888881](https://user-images.githubusercontent.com/49300659/80305778-fe395c80-87f9-11ea-97f5-ea46a0cbc9bf.jpg)
+  ![피규5](https://user-images.githubusercontent.com/49300659/92704152-b58bd580-f38d-11ea-8f1e-491aacd8e8ad.png)
 
-  ![919191919](https://user-images.githubusercontent.com/49300659/80305817-3e004400-87fa-11ea-81ee-803cb0887b1a.jpg)
+  ![피규6](https://user-images.githubusercontent.com/49300659/92704149-b58bd580-f38d-11ea-9d18-1948ce9d6178.png)
 
 
 ## 6. Requirement
