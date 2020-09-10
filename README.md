@@ -188,7 +188,7 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers selected from a particular CV are marked with "1" for that CV.
   - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the actual examples ("CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt").
   
-![피규4](https://user-images.githubusercontent.com/49300659/92704141-b3c21200-f38d-11ea-889b-1df076581fe4.png)
+![피규4](https://user-images.githubusercontent.com/49300659/92727439-145f4800-f3aa-11ea-8a6c-677dfe3af87a.png)
 
 
   #### 5-2. Final modeling phase
@@ -201,9 +201,9 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
   - The correlation plot shows the relationship between observed and predicted phenotype values.
   - The plots below are the representative result files derived from the actual examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRblup_selected_markers_Info.txt", "Best_final_RRblup_predPhenotype_list_146m_82c.txt", "Best_final_RRblup_selected_markers_Chromosomal_distribution.png", and "Best_final_RRblup_predPhenotype_plot.png").
     
-  ![피규5](https://user-images.githubusercontent.com/49300659/92704152-b58bd580-f38d-11ea-8f1e-491aacd8e8ad.png)
+  ![피규5](https://user-images.githubusercontent.com/49300659/92727437-13c6b180-f3aa-11ea-99ce-1065d360da92.png)
 
-  ![피규6](https://user-images.githubusercontent.com/49300659/92704149-b58bd580-f38d-11ea-9d18-1948ce9d6178.png)
+  ![피규6](https://user-images.githubusercontent.com/49300659/92727436-12958480-f3aa-11ea-87f0-c514ec29b070.png)
 
 
 ## 6. Requirement
