@@ -1,8 +1,0 @@
-CV	Model	Train_Samples	Test_Samples	Used_Markers	Corr_all_markers	Corr_selected_markers	Pre_selected_markers	Total_Selected_markers	Initial_runtime	Total_runtime
-CV-1	RF	197	 77	36901	0.7221370	0.9047109	0	51	9.296387 secs	7.160514 mins
-CV-2	RF	169	105	36901	0.6800681	0.9008293	0	47	7.3009 secs	3.124704 mins
-CV-3	RF	182	 92	36901	0.6771397	0.9011417	0	44	8.037415 secs	26.5847 mins
-CV-1	RRblup	197	 77	36901	0.6943486	0.9008512	0	43	0.634764 secs	27.40953 secs
-CV-2	RRblup	169	105	36901	0.6851250	0.9014110	0	56	0.444495 secs	37.67217 secs
-CV-3	RRblup	182	 92	36901	0.6592752	0.9017696	0	41	0.3636065 secs	49.99308 secs
-Total	RRblup_RF	274	100	36901	0.686349 (0.020993)	0.901786 (0.001477)	0	146 (17)	-	38.79646 mins
