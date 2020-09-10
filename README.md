@@ -173,7 +173,7 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
    - Due to the image size constraint, the plots below show only the beginning and end of the screens.
     
 ![피규3-1](https://user-images.githubusercontent.com/49300659/92703964-92f9bc80-f38d-11ea-9fe6-8d4dc0c75ad4.png)
-![피규3-2](https://user-images.githubusercontent.com/49300659/92704007-99883400-f38d-11ea-99df-2d3806b17bb9.png)
+![피규3-2](https://user-images.githubusercontent.com/49300659/92728192-4ae99280-f3ab-11ea-8818-a110b7d3e9d7.png)
   
   
 ## 5. Results
