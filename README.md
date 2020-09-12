@@ -223,12 +223,12 @@ R-package for using the various functions defined in GMStool can be downloaded a
   ### 5-2. Final modeling phase
   
   - Representative result files in the final modeling phase are a summary file of the final modeling, a information file of the selected markers, a phenotype file predicted from the final model, a chromosomal distribution plot of the selected markers, and a correlation plot between the predicted and observed phenotypes.
-  - The summary file of the final modeling shows the final accuracies of the models on the test-set.
-  - The information file of selected markers shows the chromosome, physical position, and GWAS p-value information of the selected markers.
-  - The predicted phenotype file consists of the observed phenotype values and the phenotype values predicted from the best prediction model.
-  - The chromosomal distribution plot shows the distribution of selected markers according to chromosomes.
-  - The correlation plot shows the relationship between observed and predicted phenotype values.
-  - The plots below are the representative result files derived from the actual examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRblup_selected_markers_Info.txt", "Best_final_RRblup_predPhenotype_list_146m_82c.txt", "Best_final_RRblup_selected_markers_Chromosomal_distribution.png", and "Best_final_RRblup_predPhenotype_plot.png").
+  - The summary file of the final modeling shows the correlation rate of the final model on the test set.
+  - The information file of selected markers shows the information of the chromosome number, physical position, and GWAS p-value of all selected markers.
+  - The predicted phenotype file consists of the observed phenotype values and the phenotype values predicted from the final prediction model, for the test set.
+  - The chromosomal distribution plot shows the distribution of all selected markers according to chromosome numbers.
+  - The correlation plot shows the relationship between observed and predicted phenotype values, for the test set.
+  - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_122m_77c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
     
   ![피규5](https://user-images.githubusercontent.com/49300659/92727437-13c6b180-f3aa-11ea-99ce-1065d360da92.png)
 
