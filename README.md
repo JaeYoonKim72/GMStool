@@ -213,9 +213,9 @@ R-package for using the various functions defined in GMStool can be downloaded a
   ### 5-1. Marker selection phase
   
   - Representative result files in the marker selection phase are a summary file of all CVs and a list file of selected markers.
-  - The summary file of all CVs contains the used methods, the numbers of train and test samples, the number of selected markers, the required time, and so on.
-  - The list file of selected markers contains a list of all selected markers along with CV information. Markers selected from a particular CV are marked with "1" for that CV.
-  - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the actual examples ("CV_RRblup_RF_Selection_summary.txt" and "CV_RRblup_RF_Marker_scores.txt").
+  - The summary file for all CVs records to the selection method used, the number of training and validation samples, the number of markers selected, the time spent, and so on.
+  - The list file of selected markers contains a list of all selected markers along with CV information. Markers are marked with "1" for the CV from which each marker was selected.
+  - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the above examples ("CV_RRB_BTS_Selection_summary.txt" and "CV_RRB_BTS_Marker_scores.txt").
   
 ![피규4](https://user-images.githubusercontent.com/49300659/92727439-145f4800-f3aa-11ea-8a6c-677dfe3af87a.png)
 
