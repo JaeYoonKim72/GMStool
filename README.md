@@ -74,8 +74,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -t option is mandatory, and specifies the sample names of test sets. the test samples are excluded in the marker selection phases and are used only in the evaluation of the final modeling phase.
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
-  - -c option specifies the target correlation rate for the validation set of the markers to be selected.
-  - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value.
+  - -c option specifies the target correlation rate for the validation set of the markers to be selected. The default value is 0.95, but 0.99 is recommended to select as many potential markers as possible. However, since it may take a lot of calculation time, it is recommended to test several times.
+  - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value. This condition is applied to both the training set and the validation set, and only a marker with higher values than the previous values of both sets are selected.
   - -is option means the number of top markers to be selected initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
   - -ss option indicates the number of markers to be selected at one time in the marker selection algorithm. It is recommended to select one marker at one time.
   - -gpu option determines whether to use the GPU when calculating the RRB method. This option supports only linux platform, and it may not be executed in some computational environments depending on the GPU and system settings.
