@@ -59,28 +59,27 @@ R-package for using the various functions defined in GMStool can be downloaded a
              -t TEST,           Test sample list file. This file contains the sample names of the test set (Essential).
              -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
              -cv CV,            The number of cross validation (Default 3).
-             -c CORR,           Target correlation rate (Default 0.9).
+             -c CORR,           Target correlation rate for the validation set (Default 0.9).
              -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.00005).
              -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
              -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
-             -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
-             -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
+             -gpu GPU_USAGE,    If TRUE, RRB is calculated using GPU (Only available in Linux) (Default FALSE).
+             -all ALL_SNPs,     If TRUE, correlation rate of all markers for the validation set in each CV is calculated, but it takes a lot of time (Default FALSE).
   
   
-  - -m option specifies the selection method to be used, and "RRB" and "BTS" can be selected. If you want to use both RRB and BTS, put "_" between the two methods and specify the -m option to "RRB_RF".
+  - -m option specifies the selection method to be used, and "RRB" and "BTS" can be selected. If you want to use both RRB and BTS, put "_" between the two methods and specify the -m option to "RRB_BTS".
   - -g and -p options are mandatory, and specify the genotype and phenotype files prepared in the previous phase.
   - -gw option specifies the gwas result file obtained in the previous phase. If this option is not given by the user, GMStool internally estimates the effects of markers for conducting the marker selection. When RRB is selected as the selection method, marker effects are derived from the coefficients of genotype variables of the model. Also, when BTS is selected, variable importance values in the random forest model are estimated as marker effects. Although GMStool has the functions to estimate marker effects internally, it is recommended to use a separate GWAS result file with -gw option.
   - -i option means the marker information file, and is only used when the -gw option is not given. 
-  - -t option 
+  - -t option is mandatory, and specifies the sample names of test sets. the test samples are excluded in the marker selection phases and are used only in the evaluation of the final modeling phase.
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
-  - -a option specifies the target accuracy of the markers to be selected.
-  - -d option is an increment value of accuracy, and a marker to be selected must be higher than the accuracy of the previous marker plus the increment value.
-  - -is option means the number of top markers to select initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
-  - -ss option indicates the number of markers to select at one time in the marker selection algorithm. It is recommended to select one marker at one time.
-  - -gpu option determines whether to use the GPU when calculating the RR-BLUP method. Depending on the GPU and system settings, it may not be possible in some computation environments.
-  - -all option determines whether to calculate the accuracy of all markers for the validation-set in each CV. This accuracy can be used as a reference for the minimum accuracy that the finally selected markers should have.
-  - -t option means the maximum calculation time allowed per CV. The unit of time is hour(s).
+  - -c option specifies the target correlation rate for the validation set of the markers to be selected.
+  - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value.
+  - -is option means the number of top markers to be selected initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
+  - -ss option indicates the number of markers to be selected at one time in the marker selection algorithm. It is recommended to select one marker at one time.
+  - -gpu option determines whether to use the GPU when calculating the RRB method. This option supports only linux platform, and it may not be executed in some computational environments depending on the GPU and system settings.
+  - -all option determines whether to calculate the correlation rate of all markers for the validation set in each CV. 
   
   - The actual examples of the marker selection phase are as follows:
   
