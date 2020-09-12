@@ -89,7 +89,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -gpu option determines whether to use the GPU when calculating the RRB method. This option supports only linux platform, and it may not be executed in some computational environments depending on the GPU and system settings.
   - -all option determines whether to calculate the correlation rate of all markers for the validation set in each CV. 
   
-  #### The examples of the marker selection phase are as follows:
+  #### Examples of the marker selection phase are as follows:
   
         1) Example of marker selection not using multithreading
         
@@ -166,7 +166,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -t option means the maximum modeling time allowed per selected model. The unit of time is hour(s).
 
 
-  #### The example of the final modeling phase is as follows:
+  #### Example of the final modeling phase is as follows:
 
         1) Example of final modeling
     
@@ -178,11 +178,12 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -gw ExampleData/Ex_gwas.txt \        # GWAS result file
                          
-                     -pe 5 \                              # The number of permutations for each modeling
+                     -pe 5 \                              # The number of permutations per modeling of each model
+                                                          # In the case of this example, a low number is set for quick results confirmation
                          
                      -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
                                                                            
-                     -t 1                                 # Runtime cut-off for permutatios of each modeling
+                     -t 1                                 # Runtime cut-off for permutatios of each modeling (hour)
                      
                      
                      
