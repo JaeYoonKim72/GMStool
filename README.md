@@ -27,9 +27,10 @@ R-package for using the various functions defined in GMStool can be downloaded a
 ## 4. Run
   #### 4-1. Preparation phase
  - GMStool essentially requires four input files, genotype, phenotype, GWAS result, and test list files. Preset file is optional.
- - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes. 
+ - "Genotype file" consists of markers (rows) and samples (columns), and genotypes are coded as -1, 0, 1, and 2 along missing, homozygous reference, heterozygous, and homozygous alternative genotypes.
  - "Phenotype file" consists of samples (rows) and phenotype values (a column). Only one phenotype column is acceptable to GMStool, and an output directory is created based on the phenotype column name (see https://github.com/JaeYoonKim72/GMStool/tree/master/Results).
  - "GWAS result file" consists of SNPIDs (marker names), chromosome number, physical position, and p-value columns, in order. Additional columns may be present in the GWAS results file, but these four columns must be organized in order. 
+ - "Test list file" consists of a column with sample names of test set. 
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
 
 ![피규2](https://user-images.githubusercontent.com/49300659/92703903-870dfa80-f38d-11ea-9f72-e52a88a5fbf7.png)
