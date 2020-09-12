@@ -59,7 +59,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
              -t TEST,           Test sample list file. This file contains the sample names of the test set (Essential).
              -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
              -cv CV,            The number of cross validation (Default 3).
-             -c CORR,           Target correlation rate for the validation set (Default 0.9).
+             -c CORR,           Target correlation rate for the validation set (Default 0.95).
              -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.00005).
              -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
              -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
@@ -138,7 +138,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
             GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
 
         Description of arguments:
-             -m MODEL,        Prediction model (RRblup, RF, DNN, or CNN).
+             -m MODEL,        Prediction model (RRB, RF, DNN, or CNN; Essential).
              -d DIR,          Result directory of marker selection (Essential).
              -gw GWAS,        GWAS result file. If GWAS file is not provided, marker information file should be provided (Essential or optional).
              -i INFO,         Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
@@ -147,7 +147,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
              -t TIME,         Runtime cut-off for permutatios of each modeling (Default 1 hour).
 
 
-  - -m option specifies the prediction model to be used. "RRblup", "RF", "DNN", and "CNN" can be selected. If you want to use more than one model, put "_" between the methods and specify the -m option as like "RRblup_DNN" or "RRblup_RF_DNN_CNN".
+  - -m option specifies the prediction model to be used. "RRB", "RF", "DNN", and "CNN" can be selected. If you want to use more than one model, put "_" between the methods and specify the -m option as like "RRB_DNN" or "RRB_RF_DNN_CNN".
   - -d option specifies the path of the result directory derived from the marker selection phase. Final modeling script loads the result files in this path and saves all of modeling result to this path.
   - -gw option specifies the identical gwas result file used in phases of preparation and marker selection. This option is used to generate a chromosomal distribution plot of selected markers. 
   - -i option means the marker information file, and is used when the -gw option is not given. If the GWAS result file was not provided in the marker selection phase and marker effects were calculated internally in GMStool, this marker information file must be provided to generate a chromosomal distribution plot of selected markers. 
@@ -161,13 +161,13 @@ R-package for using the various functions defined in GMStool can be downloaded a
     
           Rscript GMStools.FM.v1.R \   
     
-                     -m RRblup_RF_DNN_CNN \               # Chose the prediction models (RRblup, RF, DNN, or CNN)
+                     -m RRB_RF_DNN_CNN \                  # Chose the prediction models (RRB, RF, DNN, or CNN)
                          
                      -d Results/Phenotype_RRblup_RF_PN_CV3_Ini5_Sel1_with_gwas/ \ # The path of result directory of marker selection
                          
                      -gw ExampleData/Ex_gwas.txt \        # GWAS result file
                          
-                     -pe 50 \                             # The number of permutations for each modeling
+                     -pe 5 \                              # The number of permutations for each modeling
                          
                      -gpu TRUE \                          # Whether to use the GPU when modeling DNN or CNN 
                                                                            
