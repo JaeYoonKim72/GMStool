@@ -140,7 +140,9 @@ R-package for using the various functions defined in GMStool can be downloaded a
 
   ### 4-3. Final modeling phase
 
-  - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
+  - Final modeling phase is executed by "GMStools.FM.v1.R" script. 
+  
+  #### Usage and detailed options are as follows.
   
         Usage: 
             GMStools.FM.v1.R -m [MODEL] -d [DIR] -gw [GWAS] -i [INFO] -pe [PERMUTATION] -gpu [GPU_USAGE] -t [TIME]
@@ -163,7 +165,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -gpu option determines whether to use the GPU when modeling DNN and CNN. Depending on the GPU and system settings, it may not be possible in some computation environments.
   - -t option means the maximum modeling time allowed per selected model. The unit of time is hour(s).
 
-  - The actual example of the final modeling phase is as follows:
+
+  #### The example of the final modeling phase is as follows:
 
         1) Example of final modeling
     
@@ -184,7 +187,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
                      
                      
-   #### 4-4. Running screen            
+   ### 4-4. Running screen            
   
    - The running screens of actual examples are shown in below. 
    - Due to the image size constraint, the plots below show only the beginning and end of the screens.
@@ -198,7 +201,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - For a detailed description of all result files, see https://github.com/JaeYoonKim72/GMStool/tree/master/Results.
 
 
-  #### 5-1. Marker selection phase
+  ### 5-1. Marker selection phase
   
   - Representative result files in the marker selection phase are a summary file of all CVs and a list file of selected markers.
   - The summary file of all CVs contains the used methods, the numbers of train and test samples, the number of selected markers, the required time, and so on.
@@ -208,7 +211,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
 ![피규4](https://user-images.githubusercontent.com/49300659/92727439-145f4800-f3aa-11ea-8a6c-677dfe3af87a.png)
 
 
-  #### 5-2. Final modeling phase
+  ### 5-2. Final modeling phase
   
   - Representative result files in the final modeling phase are a summary file of the final modeling, a information file of the selected markers, a phenotype file predicted from the final model, a chromosomal distribution plot of the selected markers, and a correlation plot between the predicted and observed phenotypes.
   - The summary file of the final modeling shows the final accuracies of the models on the test-set.
