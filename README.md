@@ -45,6 +45,10 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are the same, and usage and detailed options are as follows.
   - RRB is a linear model that estimates the effects of marker variables with the best linear unbiased predictor, and BTS is a nonlinear model that is similar to RF but applies only bootstrap to the train samples (0.632 bootstrap).
   
+   #### Caveats
+  - If markers are not selected in a row by a number of 20% of the total number of markers (=If the correlation rates of markers are not improved in a row by a number of 20% of the total number of markers), the selection process is stopped and the selected markers up to that point are returned as a result.
+  - In the flowchart of the marker selection algorithm, the value of x represents a number equal to 20% of the total number of markers.
+  
         Usage: 
             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -t [TEST] 
                              -pre [PRESET] -cv [CV] -c [CORR] -d [INCREMENT] -is [INTIAL SNPs]
