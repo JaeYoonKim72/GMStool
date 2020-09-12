@@ -21,7 +21,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
 ## 3. Flow-chart
   - Flow-chart of GMStool is as follows:
 
-![피규1](https://user-images.githubusercontent.com/49300659/92703845-7c536580-f38d-11ea-8ae0-662cf658555c.png)
+![그림1](https://user-images.githubusercontent.com/49300659/92989709-2c9da700-f511-11ea-95ca-9fb40f075c32.png)
 
 
 ## 4. Run
