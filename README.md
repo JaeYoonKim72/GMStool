@@ -239,7 +239,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
 
 GMStool basically requires R version 3.6.1 or higher, and needs 13 additional libraries.
 
-- data.table, tidyverse, ggplot2, ggpmisc, caret, randomForest, rrBLUP, tensorflow, keras, gpuR, doParallel, foreach, and iterators
+- data.table (v1.12.8), tidyverse (v1.3.0), ggplot2 (v3.3.0), ggpmisc (v0.3.3), caret (v6.0-86), randomForest (v4.6-14), rrBLUP (v.4.6.1), tensorflow (v.2.2.0), keras (v2.3.0), gpuR, doParallel (v1.0.15), foreach (v1.5.0), and iterators (v1.0.12)
 
 
 ## 7. Contact
