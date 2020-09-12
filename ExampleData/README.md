@@ -28,5 +28,7 @@
 
 
 5. "Ex_test_sample_list.txt"
-   - This file is the information of 12,301 SNP markers, and consists of "SNP marker", "Chromosome", and "Position" columns in order.
-   - If a GWAS reuslt file is not provided ("Ex_gwas.txt"), GMStool internally estimates marker effects and performs marker selection and prediction based on the priority of the marker effects. At this time, this file is used to obtain the information of the markers.
+   - This file contains the sample names of the test set. 
+   - 50 test samples are named in this example file.
+   - The user must specify samples to be used as the test set through this file.
+
