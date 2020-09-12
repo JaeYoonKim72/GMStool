@@ -86,6 +86,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
         1) Example of marker selection not using multithreading
         
               Rscript GMStools.MS.v1.R \   
+              
                      -m RRB_BTS \                             # Chose the selection methods (RRB, BTS, or RRB_BTS) 
                      
                      -g ExampleData/Ex_genotype.txt \         # Genotype file
@@ -120,7 +121,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -cv 3 \                                  # Cross validation value
                          
-                     -a 0.9 \                                 # Target correlation rate for the validation set
+                     -c 0.9 \                                 # Target correlation rate for the validation set
                           
                      -is 5 \                                  # The number of initial SNPs to be selected
                                                  
