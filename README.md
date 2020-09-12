@@ -141,15 +141,13 @@ R-package for using the various functions defined in GMStool can be downloaded a
   ### 4-3. Final modeling phase
 
   - Final modeling phase is executed by "GMStools.FM.v1.R" script. For modeling, RRB, RF, DNN, and CNN models are provided, and after modeling, final predictions for the test set are automatically performed.
-  - The RRB model is the same as the model used for marker selection, and the RF model is a model in which bootstrap of variables is additionally considered in the BTS model of marker selection (sampling with replacement, one-third of the input markers).
-  - DNN and CNN models support high-speed computation through GPU.
+  - The RRB model is the same as the model used for marker selection, and the RF model is a model in which bootstrap of variables is additionally considered in the BTS model of marker selection (sampling one-third of the input markers, with replacement).
+  - The models of DNN and CNN are constructed with architectures of 256-128-64-32-16-1 and 32-16-8-64-32-16-1, respectively, and their detailed structures are described in our paper (refer citation section in this web page). These DNN and CNN models support high-speed computation through GPU, in the modeling phase of the GMStool.
   
 
   #### Caveats
   - CNN model automatically sorts the markers in ascending order according to the chromosome number and physical position, and uses them to modeling, in order to effectively consider the interaction between adjacent markers.
-  - 
-
-  
+  - The remaining models use markers sorted in the most selected order among all CVs (original sorting state of the marker selection phase).
   
   
   #### Usage and detailed options are as follows.
