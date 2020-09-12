@@ -232,7 +232,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
     
   ![피규5](https://user-images.githubusercontent.com/49300659/92727437-13c6b180-f3aa-11ea-99ce-1065d360da92.png)
 
-  ![피규6](https://user-images.githubusercontent.com/49300659/92727436-12958480-f3aa-11ea-87f0-c514ec29b070.png)
+  ![피규6](https://user-images.githubusercontent.com/49300659/92996033-48ba3c00-f543-11ea-8344-62b100bf58df.png)
 
 
 ## 6. Requirement
