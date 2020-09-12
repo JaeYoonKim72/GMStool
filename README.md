@@ -86,45 +86,46 @@ R-package for using the various functions defined in GMStool can be downloaded a
         1) Example of marker selection not using multithreading
         
               Rscript GMStools.MS.v1.R \   
-                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF) 
+                     -m RRB_BTS \                             # Chose the selection methods (RRB, BTS, or RRB_BTS) 
                      
-                     -g ExampleData/Ex_genotype.txt \     # Genotype file
+                     -g ExampleData/Ex_genotype.txt \         # Genotype file
                      
-                     -p ExampleData/Ex_phenotype.txt \    # Phenotype file
+                     -p ExampleData/Ex_phenotype.txt \        # Phenotype file
                      
-                     -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                     -gw ExampleData/Ex_gwas.txt \            # GWAS result file
                      
-                     -cv 3 \                              # Cross validation value
+                     -t ExampleData/Ex_test_sample_list.txt \ # Sample name list file for the test set
                      
-                     -a 0.9 \                             # Target accuracy 
+                     -cv 3 \                                  # Cross validation value
                      
-                     -is 5 \                              # The number of initial SNPs
+                     -c 0.9 \                                 # Target correlation rate for the validation set 
                      
-                     -t 4                                 # Computational time for each CV
+                     -is 5 \                                  # The number of initial SNPs to be selected
+
 
 
         2) Example of marker selection using multithreading:
     
           Rscript GMStools.MS.MultiThreading.v1.R \   
     
-                     -m RRblup_RF \                       # Chose the selection methods (RRblup, RF, or RRblup_RF)
+                     -m RRB_BTS \                             # Chose the selection methods (RRB, BTS, or RRB_BTS)
                          
-                     -g ExampleData/Ex_genotype.txt \     # Genotype file
+                     -g ExampleData/Ex_genotype.txt \         # Genotype file
                          
-                     -p ExampleData/Ex_phenotype.txt \    # Phenotype file
+                     -p ExampleData/Ex_phenotype.txt \        # Phenotype file
                          
-                     -gw ExampleData/Ex_gwas.txt \        # GWAS result file
+                     -gw ExampleData/Ex_gwas.txt \            # GWAS result file
+                     
+                     -t ExampleData/Ex_test_sample_list.txt \ # Sample name list file for the test set
                          
-                     -cv 3 \                              # Cross validation value
+                     -cv 3 \                                  # Cross validation value
                          
-                     -a 0.9 \                             # Target accuracy 
+                     -a 0.9 \                                 # Target correlation rate for the validation set
                           
-                     -is 5 \                              # The number of initial SNPs
+                     -is 5 \                                  # The number of initial SNPs to be selected
                                                  
-                     -t 4                                 # Computational time for each CV
+                  
                      
-                     
-
 
   #### 4-3. Final modeling phase
 
