@@ -89,7 +89,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -gpu option determines whether to use the GPU when calculating the RRB method. This option supports only linux platform, and it may not be executed in some computational environments depending on the GPU and system settings.
   - -all option determines whether to calculate the correlation rate of all markers for the validation set in each CV. 
   
-  - The examples of the marker selection phase are as follows:
+  #### The examples of the marker selection phase are as follows:
   
         1) Example of marker selection not using multithreading
         
