@@ -43,7 +43,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   ### 4-2. Marker selection phase
 
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All other options are the same, and usage and detailed options are as follows.
-  - RRB is a linear model that estimates the effects of marker variables with the best linear unbiased predictor, and BTS is a nonlinear model that is similar to RF but applies only bootstrap to the sample (0.632 bootstrap).
+  - RRB is a linear model that estimates the effects of marker variables with the best linear unbiased predictor, and BTS is a nonlinear model that is similar to RF but applies only bootstrap to the train samples (0.632 bootstrap).
   
         Usage: 
             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -t [TEST] 
