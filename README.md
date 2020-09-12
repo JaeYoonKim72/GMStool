@@ -51,7 +51,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - In the flowchart of the marker selection algorithm, the value of x represents a number equal to 20% of the total number of markers.
   
   
-  -Usage and detailed options are as follows:
+   #### Usage and detailed options are as follows:
   
         Usage: 
             GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -t [TEST] 
@@ -138,7 +138,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                   
                      
 
-  #### 4-3. Final modeling phase
+  ### 4-3. Final modeling phase
 
   - Final modeling phase is executed by "GMStools.FM.v1.R" script. Usage and detailed options are as follows.
   
