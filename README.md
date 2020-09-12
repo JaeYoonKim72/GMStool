@@ -101,7 +101,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
                      -c 0.9 \                                 # Target correlation rate for the validation set 
                      
-                     -is 5 \                                  # The number of initial SNPs to be selected
+                     -is 5                                    # The number of initial SNPs to be selected
 
 
 
@@ -123,7 +123,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -c 0.9 \                                 # Target correlation rate for the validation set
                           
-                     -is 5 \                                  # The number of initial SNPs to be selected
+                     -is 5                                    # The number of initial SNPs to be selected
                                                  
                   
                      
