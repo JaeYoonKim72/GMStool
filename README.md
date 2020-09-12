@@ -33,7 +33,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
  - "Test list file" consists of a single column with sample names of test set. 
  - "Preset file" means a list of markers that must be selected, and consists of a column with marker names (optional). 
  
- --caveats--
+ ### Caveats
  - Note that the GWAS result file must be a result file calculated using only the train set excluding the test set. 
  - Both genotype and phenotype files must contain samples of the test set. Test samples in these files are automatically recognized through the "test list file".
 
