@@ -81,7 +81,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -gpu option determines whether to use the GPU when calculating the RRB method. This option supports only linux platform, and it may not be executed in some computational environments depending on the GPU and system settings.
   - -all option determines whether to calculate the correlation rate of all markers for the validation set in each CV. 
   
-  - The actual examples of the marker selection phase are as follows:
+  - The examples of the marker selection phase are as follows:
   
         1) Example of marker selection not using multithreading
         
@@ -99,7 +99,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
                      -cv 3 \                                  # Cross validation value
                      
-                     -c 0.9 \                                 # Target correlation rate for the validation set 
+                     -c 0.8 \                                 # Target correlation rate for the validation set 
+                                                              # In the case of this example, a low target correlation rate is set for quick results confirmation
                      
                      -is 5                                    # The number of initial SNPs to be selected
 
@@ -121,7 +122,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -cv 3 \                                  # Cross validation value
                          
-                     -c 0.9 \                                 # Target correlation rate for the validation set
+                     -c 0.8 \                                 # Target correlation rate for the validation set
+                                                              # In the case of this example, a low target correlation rate is set for quick results confirmation
                           
                      -is 5                                    # The number of initial SNPs to be selected
                                                  
