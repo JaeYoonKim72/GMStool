@@ -107,7 +107,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
 
         2) Example of marker selection using multithreading:
     
-          Rscript GMStools.MS.MultiThreading.v1.R \   
+              Rscript GMStools.MS.MultiThreading.v1.R \   
     
                      -m RRB_BTS \                             # Chose the selection methods (RRB, BTS, or RRB_BTS)
                          
