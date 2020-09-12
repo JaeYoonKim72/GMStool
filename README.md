@@ -41,25 +41,25 @@ R-package of GMStool can be downladed as the following command in R (refer to ht
   
   
         Usage: 
-            GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -pre [PRESET] 
-                             -cv [CV] -a [ACC] -d [INCREMENT] -is [INTIAL SNPs] -ss [SNPS_SELECTED] 
-                             -gpu [GPU_USAGE] -all [ALL_SNPs] -t [TIME]
+            GMStools.MS.v1.R -m [METHOD] -g [GENO] -p [PHENO] -gw [GWAS] -i [INFO] -t [TEST] 
+                             -pre [PRESET] -cv [CV] -c [CORR] -d [INCREMENT] -is [INTIAL SNPs]
+                             -ss [SNPS_SELECTED] -gpu [GPU_USAGE] -all [ALL_SNPs]
                              
         Description of arguments:
-             -m METHOD,         Selection method (RRblup, RF, or RRblup_RF).
+             -m METHOD,         Selection method (RRB, BTS, or RRB_BTS; Essential).
              -g GENO,           Genotype file (Essential).
              -p PHENO,          Phenotype file (Essential).
              -gw GWAS,          GWAS result file. If GWAS file is not provided, GMStool calculates marker effects internally (Essential or optional).
              -i INFO,           Marker information file. Required if GWAS file is not provided (Optional; Default NULL).
+             -t TEST,           Test sample list file. This file contains the sample names of the test set (Essential).
              -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
              -cv CV,            The number of cross validation (Default 3).
-             -a ACC,            Goal of correlation rate (Default 0.9).
-             -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.001).
+             -c CORR,           Target correlation rate (Default 0.9).
+             -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.00005).
              -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
              -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
              -gpu GPU_USAGE,    If TRUE, RR-BLUP is calculated using GPU (Default FALSE).
              -all ALL_SNPs,     If TRUE, correlation rates of all markers for validation sets are calculated, but it takes a lot of time (Default FALSE).
-             -t TIME,           Runtime cut-off per each CV (Default 1 hour).
   
   
   - -m option specifies the selection method to be used, and "RRblup" and "RF" can be selected. If you want to use both RRblup and RF, put "_" between the two methods and specify the -m option to "RRblup_RF".
