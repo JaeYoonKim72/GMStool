@@ -241,17 +241,17 @@ GMStool basically requires R version 3.6.1 or higher, and needs 13 additional li
 
   Essential libraries for "GMStools.MS.v1.R" and "GMStools.FM.v1.R" scripts
   
-     - data.table (v1.12.8), tidyverse (v1.3.0), ggplot2 (v3.3.0), ggpmisc (v0.3.3), caret (v6.0-86), randomForest (v4.6-14), rrBLUP (v.4.6.1), tensorflow (v.2.2.0), keras (v2.3.0)
+  - data.table (v1.12.8), tidyverse (v1.3.0), ggplot2 (v3.3.0), ggpmisc (v0.3.3), caret (v6.0-86), randomForest (v4.6-14), rrBLUP (v.4.6.1), tensorflow (v.2.2.0), keras (v2.3.0)
      
      
   Essential libraries for "GMStools.MS.MultiThreading.v1.R" and "GMStools.FM.v1.R" scripts
   
-     - data.table (v1.12.8), tidyverse (v1.3.0), ggplot2 (v3.3.0), ggpmisc (v0.3.3), caret (v6.0-86), randomForest (v4.6-14), rrBLUP (v.4.6.1), tensorflow (v.2.2.0), keras (v2.3.0)
-     - doParallel (v1.0.15), foreach (v1.5.0), and iterators (v1.0.12)
+  - data.table (v1.12.8), tidyverse (v1.3.0), ggplot2 (v3.3.0), ggpmisc (v0.3.3), caret (v6.0-86), randomForest (v4.6-14), rrBLUP (v.4.6.1), tensorflow (v.2.2.0), keras (v2.3.0)
+  - doParallel (v1.0.15), foreach (v1.5.0), and iterators (v1.0.12)
      
   Optional libraries for "GMStools.MS.v1.R" and "GMStools.MS.MultiThreading.v1.R" (to use GPU computation only on the Linux platform)
   
-      - gpuR (v2.0.2)
+  - gpuR (v2.0.2)
       
 
 ## 7. Contact
