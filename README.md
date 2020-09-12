@@ -14,7 +14,7 @@ GWAS-based Marker Selection Tool for Genomic Prediction from Genomic Data (for c
 Executable and example files of GMStool can be downloaded as the following command in linux and window.
   - git clone https://github.com/JaeYoonKim72/GMStool
   
-R-package of GMStool can be downladed as the following command in R (refer to https://github.com/lovemun/GMStool).
+R-package for using the various functions defined in GMStool can be downloaded as the following command in R. (refer to https://github.com/lovemun/GMStool).
   - devtools::install_github("lovemun/GMStool")
 
 
