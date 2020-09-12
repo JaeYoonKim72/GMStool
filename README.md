@@ -43,7 +43,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   ### 4-2. Marker selection phase
 
   - Marker selection phase is executed by either "GMStools.MS.v1.R" or "GMStools.MS.MultiThreading.v1.R" scripts. The only difference between the two scripts is whether multithreading is performed. All options are the same each other.
-  - RRB is a linear model that estimates the effects of marker variables with the best linear unbiased predictor, and BTS is a nonlinear model that is similar to RF but applies only bootstrap to the train samples (0.632 bootstrap).
+  - Selection models are provided by RRB or BTS. RRB is a linear model that estimates the effects of marker variables with the best linear unbiased predictor, and BTS is a nonlinear model that is similar to RF but applies only bootstrap to the train samples (0.632 bootstrap).
   
   
    #### Caveats
@@ -140,7 +140,17 @@ R-package for using the various functions defined in GMStool can be downloaded a
 
   ### 4-3. Final modeling phase
 
-  - Final modeling phase is executed by "GMStools.FM.v1.R" script. 
+  - Final modeling phase is executed by "GMStools.FM.v1.R" script. For modeling, RRB, RF, DNN, and CNN models are provided, and after modeling, final predictions for the test set are automatically performed.
+  - The RRB model is the same as the model used for marker selection, and the RF model is a model in which bootstrap of variables is additionally considered in the BTS model of marker selection (sampling with replacement, one-third of the input markers).
+  - DNN and CNN models support high-speed computation through GPU.
+  
+
+  #### Caveats
+  - CNN model automatically sorts the markers in ascending order according to the chromosome number and physical position, and uses them to modeling, in order to effectively consider the interaction between adjacent markers.
+  - 
+
+  
+  
   
   #### Usage and detailed options are as follows.
   
