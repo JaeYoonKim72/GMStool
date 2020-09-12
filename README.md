@@ -178,7 +178,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
 
         1) Example of final modeling
     
-          Rscript GMStools.FM.v1.R \   
+              Rscript GMStools.FM.v1.R \   
     
                      -m RRB_RF_DNN_CNN \                  # Chose the prediction models (RRB, RF, DNN, or CNN)
                          
@@ -198,8 +198,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
    ### 4-4. Running screen            
   
-   - The running screens of actual examples are shown in below. 
-   - Due to the image size constraint, the plots below show only the beginning and end of the screens.
+   - Examples of running screens for the marker selection and final modeling phases are shown in below.
+   - Due to the image size constraint, the screens below show only the beginning and end of the running screens.
     
 ![피규3-1](https://user-images.githubusercontent.com/49300659/92703964-92f9bc80-f38d-11ea-9fe6-8d4dc0c75ad4.png)
 ![피규3-2](https://user-images.githubusercontent.com/49300659/92728192-4ae99280-f3ab-11ea-8818-a110b7d3e9d7.png)
