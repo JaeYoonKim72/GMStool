@@ -68,6 +68,9 @@ R-package for using the various functions defined in GMStool can be downloaded a
              -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
              -cv CV,            The number of cross validation (Default 3).
              -c CORR,           Target correlation rate for the validation set (Default 0.95).
+             -x STOPX,          Stop condition: x is a number corresponding to X% of the total number of input markers. 
+                                If the correlation rates of train and validation sets do not improve x times in a row, 
+                                the marker selection for the corresponding CV is stopped and the results up to that point are returned (Default 0.2)
              -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.00005).
              -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
              -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
@@ -83,6 +86,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
   - -c option specifies the target correlation rate for the validation set of the markers to be selected. The default value is 0.95, but 0.99 is recommended to select as many potential markers as possible. However, since it may take a lot of calculation time, it is recommended to test several times.
+  - -x option is the stop condition. the x argmument menas a number corresponding to X% percent of the total number of input markers. If the correlation rates of train and validation sets do not improve x times in a row, the marker selection for the corresponding CV is stopped and the results up to that point are returned.
   - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value. This condition is applied to both the training set and the validation set, and only a marker with higher values than the previous values of both sets are selected.
   - -is option means the number of top markers to be selected initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
   - -ss option indicates the number of markers to be selected at one time in the marker selection algorithm. It is recommended to select one marker at one time.
