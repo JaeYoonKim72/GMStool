@@ -1,5 +1,5 @@
 ##########
-#GMStool v1 for Marker selecion, made by Seongmun Jeong and JaeYoon Kim in 2020-09-09.
+#GMStool v1 for Marker selecion, made by Seongmun Jeong and JaeYoon Kim in 2020-09-17.
 ##########
 
 suppressPackageStartupMessages(library("argparse"))
