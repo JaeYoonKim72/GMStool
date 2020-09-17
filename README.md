@@ -238,7 +238,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The correlation plot shows the relationship between observed and predicted phenotype values, for the test set.
   - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_122m_77c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
     
-  ![그림2](https://user-images.githubusercontent.com/49300659/93465947-6cf09100-f926-11ea-990c-7792dce34d85.jpg)
+  ![뉴피규2](https://user-images.githubusercontent.com/49300659/93466114-b80aa400-f926-11ea-9e9b-825ec4c24279.png)
 
   ![뉴피규3](https://user-images.githubusercontent.com/49300659/93465754-2e5ad680-f926-11ea-85c8-059141803a05.png)
 
