@@ -225,7 +225,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers are marked with "1" for the CV from which each marker was selected.
   - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the above examples ("CV_RRB_BTS_Selection_summary.txt" and "CV_RRB_BTS_Marker_scores.txt").
   
-![피규4](https://user-images.githubusercontent.com/49300659/92727439-145f4800-f3aa-11ea-8a6c-677dfe3af87a.png)
+![그림2](https://user-images.githubusercontent.com/49300659/93458111-dec2dd80-f91a-11ea-8eae-15b44c5fc71d.png)
 
 
   ### 5-2. Final modeling phase
