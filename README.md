@@ -67,7 +67,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
              -t TEST,           Test sample list file. This file contains the sample names of the test set (Essential).
              -pre PRESET,       Marker list to be selected in advance (Optional; Default NULL).
              -cv CV,            The number of cross validation (Default 3).
-             -c CORR,           Target correlation rate for the validation set (Default 0.95).
+             -c CORR,           Target correlation rate for the validation set (Default 1.0).
              -x STOPX,          Stop condition: it uses a number corresponding to x% of the total number of input markers. 
                                 If the correlation rates of validation sets do not improve as many as this number in a row, 
                                 the marker selection for the corresponding CV is stopped and the results up to that point are returned (Default 20)
@@ -85,7 +85,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -t option is mandatory, and specifies the sample names of test sets. the test samples are excluded in the marker selection phases and are used only in the evaluation of the final modeling phase.
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
-  - -c option specifies the target correlation rate for the validation set of the markers to be selected. The default value is 0.95, but 0.99 is recommended to select as many potential markers as possible. However, since it may take a lot of calculation time, it is recommended to test several times.
+  - -c option specifies the target correlation rate for the validation set of the markers to be selected. The default value is 1.0, but 0.99 is recommended, in case of avoiding excessive calculation time.
   - -x option is the stop condition. The x argument defines x at "x% percent of the total number of input markers". If the correlation rates of validation sets do not improve as many as the number corresponding to the x% in a row, the marker selection for the corresponding CV is stopped and the results up to that point are returned.
   - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value. This condition is applied to the validation set, and only a marker with higher values than the previous values are selected.
   - -is option means the number of top markers to be selected initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
