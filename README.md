@@ -86,7 +86,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - -pre option specifies markers that must be selected.
   - -cv option means k value in k-fold cross validation, and indicates the number of cross validation.
   - -c option specifies the target correlation rate for the validation set of the markers to be selected. The default value is 0.95, but 0.99 is recommended to select as many potential markers as possible. However, since it may take a lot of calculation time, it is recommended to test several times.
-  - -x option is the stop condition. the x argument defines x at "x% percent of the total number of input markers". If the correlation rates of validation sets do not improve as many as the number corresponding to the x% in a row, the marker selection for the corresponding CV is stopped and the results up to that point are returned.
+  - -x option is the stop condition. The x argument defines x at "x% percent of the total number of input markers". If the correlation rates of validation sets do not improve as many as the number corresponding to the x% in a row, the marker selection for the corresponding CV is stopped and the results up to that point are returned.
   - -d option is an increment value of the correlation rate, and a marker to be selected must be higher than the correlation rate of the previous marker plus the increment value. This condition is applied to the validation set, and only a marker with higher values than the previous values are selected.
   - -is option means the number of top markers to be selected initially from the priority of GWAS markers. If the preset option is defined (-pre), the -is option is ignored and the preset markers are considered initial markers.
   - -ss option indicates the number of markers to be selected at one time in the marker selection algorithm. It is recommended to select one marker at one time.
@@ -113,6 +113,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
                      -c 0.8 \                                 # Target correlation rate for the validation set 
                                                               # In the case of this example, a low target correlation rate is set for quick results confirmation
+                                                              
+                     -x 20 \                                  # Stop condition 
                      
                      -is 5                                    # The number of initial SNPs to be selected
 
@@ -136,6 +138,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -c 0.8 \                                 # Target correlation rate for the validation set
                                                               # In the case of this example, a low target correlation rate is set for quick results confirmation
+                                                              
+                     -x 20 \                                  # Stop condition 
                           
                      -is 5                                    # The number of initial SNPs to be selected
                                                  
