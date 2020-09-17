@@ -1,0 +1,32 @@
+CV Number 3: Start
+CV Number 3: Check prediction (correlation) rate for all markers using RRB model.
+CV Number 3: Prediction (correlation) rate for all markers using RRB is 0.984854384567147 train acc 0.697957961909461 val acc 
+CV Number 3: Prediction running time for all markers is 0.2847233 secs
+CV Number 3: Initial marker set's correlation rate is 0.43327 in train, 0.363838 in validation 
+CV Number 3: Start marker selection at 2020-09-17 19:35:28 KST
+ -- Stop condition: if the correlation rate does not increase 2460 times consecutively (20% of the total number of markers), the selection process is stopped.
+Add: 0.537626 (delta: 0.104356) train corr., 0.565645 (delta: 0.201807) val corr., 6 markers (9 reading), time: 0.7729993 secs
+Add: 0.59309 (delta: 0.055465) train corr., 0.601047 (delta: 0.035402) val corr., 7 markers (11 reading), time: 1.254861 secs
+Add: 0.632732 (delta: 0.039642) train corr., 0.624882 (delta: 0.023835) val corr., 8 markers (12 reading), time: 1.470458 secs
+Add: 0.646084 (delta: 0.013351) train corr., 0.628394 (delta: 0.003512) val corr., 9 markers (15 reading), time: 2.180025 secs
+Add: 0.657375 (delta: 0.011292) train corr., 0.630646 (delta: 0.002252) val corr., 10 markers (16 reading), time: 2.368357 secs
+Add: 0.693138 (delta: 0.035762) train corr., 0.631606 (delta: 0.000959) val corr., 11 markers (17 reading), time: 2.529526 secs
+Add: 0.696568 (delta: 0.00343) train corr., 0.647073 (delta: 0.015467) val corr., 12 markers (21 reading), time: 3.205865 secs
+Add: 0.692311 (delta: -0.004257) train corr., 0.652627 (delta: 0.005555) val corr., 13 markers (22 reading), time: 3.401638 secs
+Add: 0.687873 (delta: -0.004438) train corr., 0.653249 (delta: 0.000622) val corr., 14 markers (23 reading), time: 3.564286 secs
+Add: 0.684234 (delta: -0.003639) train corr., 0.654195 (delta: 0.000946) val corr., 15 markers (24 reading), time: 3.733559 secs
+Add: 0.722601 (delta: 0.038367) train corr., 0.737119 (delta: 0.082924) val corr., 16 markers (25 reading), time: 3.9329 secs
+Add: 0.721554 (delta: -0.001047) train corr., 0.743031 (delta: 0.005913) val corr., 17 markers (26 reading), time: 4.120954 secs
+Add: 0.718149 (delta: -0.003405) train corr., 0.748506 (delta: 0.005475) val corr., 18 markers (27 reading), time: 4.358219 secs
+Add: 0.739244 (delta: 0.021095) train corr., 0.752205 (delta: 0.003699) val corr., 19 markers (29 reading), time: 4.898315 secs
+Add: 0.778526 (delta: 0.039282) train corr., 0.755263 (delta: 0.003058) val corr., 20 markers (31 reading), time: 5.445688 secs
+Add: 0.804828 (delta: 0.026302) train corr., 0.775917 (delta: 0.020653) val corr., 21 markers (32 reading), time: 5.736455 secs
+Add: 0.832062 (delta: 0.027234) train corr., 0.791029 (delta: 0.015112) val corr., 22 markers (33 reading), time: 6.07564 secs
+Add: 0.831173 (delta: -0.000889) train corr., 0.793636 (delta: 0.002607) val corr., 23 markers (35 reading), time: 6.800043 secs
+Add: 0.830626 (delta: -0.000548) train corr., 0.798603 (delta: 0.004967) val corr., 24 markers (39 reading), time: 8.376392 secs
+Add: 0.8275 (delta: -0.003126) train corr., 0.802977 (delta: 0.004373) val corr., 25 markers (40 reading), time: 8.732106 secs
+CV Number 3: # of selected markers is 25, and correlation rates for train and validation are 0.8275, 0.802977
+CV Number 3: Running time for marker selection is 10.02409 secs
+CV Number 3: End RRB model.
+
+

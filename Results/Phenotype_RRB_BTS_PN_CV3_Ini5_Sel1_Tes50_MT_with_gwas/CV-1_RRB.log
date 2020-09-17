@@ -1,0 +1,38 @@
+CV Number 1: Start
+CV Number 1: Check prediction (correlation) rate for all markers using RRB model.
+CV Number 1: Prediction (correlation) rate for all markers using RRB is 0.999999999999988 train acc 0.604429210145527 val acc 
+CV Number 1: Prediction running time for all markers is 0.1342459 secs
+CV Number 1: Initial marker set's correlation rate is 0.42011 in train, 0.422301 in validation 
+CV Number 1: Start marker selection at 2020-09-17 19:35:28 KST
+ -- Stop condition: if the correlation rate does not increase 2460 times consecutively (20% of the total number of markers), the selection process is stopped.
+Add: 0.59205 (delta: 0.171939) train corr., 0.46479 (delta: 0.042489) val corr., 6 markers (9 reading), time: 0.9775448 secs
+Add: 0.640865 (delta: 0.048815) train corr., 0.52776 (delta: 0.06297) val corr., 7 markers (11 reading), time: 1.657543 secs
+Add: 0.677501 (delta: 0.036636) train corr., 0.56179 (delta: 0.03403) val corr., 8 markers (12 reading), time: 1.918966 secs
+Add: 0.706591 (delta: 0.02909) train corr., 0.616038 (delta: 0.054248) val corr., 9 markers (17 reading), time: 2.958661 secs
+Add: 0.715452 (delta: 0.008861) train corr., 0.616297 (delta: 0.000259) val corr., 10 markers (20 reading), time: 4.029948 secs
+Add: 0.762423 (delta: 0.046971) train corr., 0.653588 (delta: 0.03729) val corr., 11 markers (25 reading), time: 5.644372 secs
+Add: 0.760746 (delta: -0.001677) train corr., 0.667721 (delta: 0.014134) val corr., 12 markers (27 reading), time: 6.07642 secs
+Add: 0.75901 (delta: -0.001736) train corr., 0.671009 (delta: 0.003288) val corr., 13 markers (28 reading), time: 6.252882 secs
+Add: 0.765871 (delta: 0.006861) train corr., 0.680886 (delta: 0.009877) val corr., 14 markers (30 reading), time: 6.643994 secs
+Add: 0.773789 (delta: 0.007919) train corr., 0.691959 (delta: 0.011073) val corr., 15 markers (31 reading), time: 6.861949 secs
+Add: 0.808081 (delta: 0.034292) train corr., 0.731357 (delta: 0.039398) val corr., 16 markers (33 reading), time: 7.249948 secs
+Add: 0.819874 (delta: 0.011793) train corr., 0.732286 (delta: 0.000929) val corr., 17 markers (35 reading), time: 7.582675 secs
+Add: 0.821307 (delta: 0.001432) train corr., 0.734201 (delta: 0.001915) val corr., 18 markers (36 reading), time: 7.771317 secs
+Add: 0.821585 (delta: 0.000278) train corr., 0.751117 (delta: 0.016916) val corr., 19 markers (42 reading), time: 9.442099 secs
+Add: 0.826555 (delta: 0.00497) train corr., 0.756747 (delta: 0.005629) val corr., 20 markers (46 reading), time: 10.63992 secs
+Add: 0.852203 (delta: 0.025647) train corr., 0.765404 (delta: 0.008657) val corr., 21 markers (51 reading), time: 11.77815 secs
+Add: 0.852297 (delta: 9.4e-05) train corr., 0.768717 (delta: 0.003314) val corr., 22 markers (52 reading), time: 11.96677 secs
+Add: 0.872765 (delta: 0.020468) train corr., 0.769489 (delta: 0.000771) val corr., 23 markers (53 reading), time: 12.18726 secs
+Add: 0.881354 (delta: 0.008588) train corr., 0.774183 (delta: 0.004694) val corr., 24 markers (59 reading), time: 13.42618 secs
+Add: 0.880049 (delta: -0.001305) train corr., 0.788811 (delta: 0.014628) val corr., 25 markers (60 reading), time: 13.62654 secs
+Add: 0.881819 (delta: 0.00177) train corr., 0.794917 (delta: 0.006106) val corr., 26 markers (63 reading), time: 14.4748 secs
+Add: 0.88157 (delta: -0.000249) train corr., 0.795345 (delta: 0.000427) val corr., 27 markers (71 reading), time: 16.17174 secs
+Add: 0.881044 (delta: -0.000525) train corr., 0.795643 (delta: 0.000298) val corr., 28 markers (73 reading), time: 16.56535 secs
+Add: 0.880654 (delta: -0.00039) train corr., 0.796238 (delta: 0.000596) val corr., 29 markers (74 reading), time: 16.78916 secs
+Add: 0.879699 (delta: -0.000955) train corr., 0.796319 (delta: 8.1e-05) val corr., 30 markers (76 reading), time: 17.19766 secs
+Add: 0.885924 (delta: 0.006224) train corr., 0.803003 (delta: 0.006685) val corr., 31 markers (79 reading), time: 17.7587 secs
+CV Number 1: # of selected markers is 31, and correlation rates for train and validation are 0.885924, 0.803003
+CV Number 1: Running time for marker selection is 19.03043 secs
+CV Number 1: End RRB model.
+
+
