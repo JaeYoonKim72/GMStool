@@ -209,8 +209,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
    - Examples of running screens for the marker selection and final modeling phases are shown in below.
    - Due to the image size constraint, the screens below show only the beginning and end of the running screens.
     
-![피규3-1](https://user-images.githubusercontent.com/49300659/92703964-92f9bc80-f38d-11ea-9fe6-8d4dc0c75ad4.png)
-![피규3-2](https://user-images.githubusercontent.com/49300659/92728192-4ae99280-f3ab-11ea-8818-a110b7d3e9d7.png)
+![뉴피규MS](https://user-images.githubusercontent.com/49300659/93465990-7c6fda00-f926-11ea-9d7a-a40e1609547e.png)
+![뉴피규FM](https://user-images.githubusercontent.com/49300659/93466000-8265bb00-f926-11ea-9f1e-f9bd9abe9031.png)
   
   
 ## 5. Results
@@ -225,7 +225,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers are marked with "1" for the CV from which each marker was selected.
   - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the above examples ("CV_RRB_BTS_Selection_summary.txt" and "CV_RRB_BTS_Marker_scores.txt").
   
-![그림2](https://user-images.githubusercontent.com/49300659/93458111-dec2dd80-f91a-11ea-8eae-15b44c5fc71d.png)
+![그림1](https://user-images.githubusercontent.com/49300659/93465908-5fd3a200-f926-11ea-9b64-48d21677dc3b.jpg)
 
 
   ### 5-2. Final modeling phase
@@ -238,9 +238,9 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The correlation plot shows the relationship between observed and predicted phenotype values, for the test set.
   - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_122m_77c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
     
-  ![피규5](https://user-images.githubusercontent.com/49300659/92727437-13c6b180-f3aa-11ea-99ce-1065d360da92.png)
+  ![그림2](https://user-images.githubusercontent.com/49300659/93465947-6cf09100-f926-11ea-990c-7792dce34d85.jpg)
 
-  ![피규6](https://user-images.githubusercontent.com/49300659/92996033-48ba3c00-f543-11ea-8344-62b100bf58df.png)
+  ![뉴피규3](https://user-images.githubusercontent.com/49300659/93465754-2e5ad680-f926-11ea-85c8-059141803a05.png)
 
 
 ## 6. Requirement
