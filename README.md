@@ -47,8 +47,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
   
   
    #### Caveats
-  - If markers are not selected in a row by a number of 20% of the total number of markers (=If the correlation rates of markers are not improved in a row by a number of 20% of the total number of markers), the selection process is stopped and the selected markers up to that point are returned as a result.
-  - In the flowchart of the marker selection algorithm, the value of x represents a number equal to 20% of the total number of markers.
+  - If markers are not selected in a row by a number of x% of the total number of markers (=If the correlation rates of markers are not improved in a row by a number of x% of the total number of markers), the selection process is stopped and the selected markers up to that point are returned as a result.
+  - In the flowchart of the marker selection algorithm, the value of p represents a number equal to x% of the total number of markers.
   
   
    #### Usage and detailed options are as follows:
