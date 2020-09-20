@@ -1,0 +1,53 @@
+CV Number 2: Start
+CV Number 2: Check prediction (correlation) rate for all markers using BTS model.
+CV Number 2: Prediction (correlation) rate for all markers using BTS is 0.962625418867149 train acc 0.555436845837479 val acc 
+CV Number 2: Prediction running time for all markers is 0.6846011 secs
+CV Number 2: Initial marker set's correlation rate is 0.508304 in train, 0.268492 in validation 
+CV Number 2: Start marker selection at 2020-09-20 18:29:37 KST
+ -- Stop condition: if the correlation rate does not increase 2460 times consecutively (20% of the total number of markers), the selection process is stopped.
+Add: 0.508749 (delta: 0.000444) train corr., 0.274067 (delta: 0.005575) val corr., 2 markers (6 reading), time: 1.288191 secs
+Add: 0.554154 (delta: 0.045406) train corr., 0.33399 (delta: 0.059923) val corr., 3 markers (7 reading), time: 1.542746 secs
+Add: 0.564788 (delta: 0.010634) train corr., 0.39145 (delta: 0.05746) val corr., 4 markers (8 reading), time: 1.781621 secs
+Add: 0.722132 (delta: 0.157344) train corr., 0.494401 (delta: 0.102951) val corr., 5 markers (9 reading), time: 2.02128 secs
+Add: 0.744549 (delta: 0.022417) train corr., 0.503286 (delta: 0.008885) val corr., 6 markers (10 reading), time: 2.255623 secs
+Add: 0.765561 (delta: 0.021012) train corr., 0.556329 (delta: 0.053043) val corr., 7 markers (11 reading), time: 2.489781 secs
+Add: 0.781477 (delta: 0.015916) train corr., 0.585267 (delta: 0.028938) val corr., 8 markers (13 reading), time: 3.00674 secs
+Add: 0.801323 (delta: 0.019846) train corr., 0.600229 (delta: 0.014961) val corr., 9 markers (14 reading), time: 3.366995 secs
+Add: 0.823994 (delta: 0.022671) train corr., 0.641236 (delta: 0.041007) val corr., 10 markers (17 reading), time: 4.161827 secs
+Add: 0.82666 (delta: 0.002666) train corr., 0.662605 (delta: 0.021369) val corr., 11 markers (19 reading), time: 4.670491 secs
+Add: 0.841114 (delta: 0.014454) train corr., 0.667951 (delta: 0.005345) val corr., 12 markers (21 reading), time: 5.058931 secs
+Add: 0.883952 (delta: 0.042838) train corr., 0.689013 (delta: 0.021063) val corr., 13 markers (25 reading), time: 5.892884 secs
+Add: 0.887734 (delta: 0.003782) train corr., 0.692899 (delta: 0.003885) val corr., 14 markers (26 reading), time: 6.089942 secs
+Add: 0.892944 (delta: 0.00521) train corr., 0.699188 (delta: 0.00629) val corr., 15 markers (27 reading), time: 6.286706 secs
+Add: 0.892183 (delta: -0.000761) train corr., 0.705982 (delta: 0.006794) val corr., 16 markers (29 reading), time: 6.684055 secs
+Add: 0.893142 (delta: 0.000959) train corr., 0.7172 (delta: 0.011217) val corr., 17 markers (30 reading), time: 6.877007 secs
+Add: 0.90203 (delta: 0.008888) train corr., 0.721405 (delta: 0.004205) val corr., 18 markers (31 reading), time: 7.068985 secs
+Add: 0.904492 (delta: 0.002462) train corr., 0.742185 (delta: 0.02078) val corr., 19 markers (32 reading), time: 7.263334 secs
+Add: 0.907829 (delta: 0.003337) train corr., 0.764724 (delta: 0.022539) val corr., 20 markers (39 reading), time: 8.643442 secs
+Add: 0.909692 (delta: 0.001863) train corr., 0.776624 (delta: 0.0119) val corr., 21 markers (45 reading), time: 9.890859 secs
+Add: 0.90773 (delta: -0.001962) train corr., 0.778087 (delta: 0.001463) val corr., 22 markers (47 reading), time: 10.27569 secs
+Add: 0.909025 (delta: 0.001295) train corr., 0.781095 (delta: 0.003008) val corr., 23 markers (48 reading), time: 10.46934 secs
+Add: 0.915746 (delta: 0.006721) train corr., 0.785307 (delta: 0.004212) val corr., 24 markers (49 reading), time: 10.6643 secs
+Add: 0.914439 (delta: -0.001307) train corr., 0.785764 (delta: 0.000456) val corr., 25 markers (54 reading), time: 11.64703 secs
+Add: 0.912775 (delta: -0.001664) train corr., 0.790848 (delta: 0.005085) val corr., 26 markers (68 reading), time: 14.52505 secs
+Add: 0.919826 (delta: 0.007051) train corr., 0.797858 (delta: 0.00701) val corr., 27 markers (72 reading), time: 15.32789 secs
+Add: 0.919862 (delta: 3.6e-05) train corr., 0.799202 (delta: 0.001343) val corr., 28 markers (79 reading), time: 16.79045 secs
+Add: 0.922701 (delta: 0.002839) train corr., 0.803199 (delta: 0.003998) val corr., 29 markers (81 reading), time: 17.19878 secs
+Add: 0.925772 (delta: 0.003071) train corr., 0.804599 (delta: 0.0014) val corr., 30 markers (82 reading), time: 17.39903 secs
+Add: 0.934436 (delta: 0.008665) train corr., 0.805619 (delta: 0.00102) val corr., 31 markers (84 reading), time: 17.80688 secs
+Add: 0.937732 (delta: 0.003295) train corr., 0.815197 (delta: 0.009578) val corr., 32 markers (85 reading), time: 18.00688 secs
+Add: 0.940222 (delta: 0.00249) train corr., 0.817447 (delta: 0.00225) val corr., 33 markers (87 reading), time: 18.41807 secs
+Add: 0.941906 (delta: 0.001684) train corr., 0.826359 (delta: 0.008912) val corr., 34 markers (94 reading), time: 19.89112 secs
+Add: 0.948492 (delta: 0.006586) train corr., 0.830782 (delta: 0.004423) val corr., 35 markers (112 reading), time: 24.26711 secs
+Add: 0.947796 (delta: -0.000697) train corr., 0.834403 (delta: 0.003621) val corr., 36 markers (120 reading), time: 25.9651 secs
+Add: 0.94598 (delta: -0.001815) train corr., 0.84056 (delta: 0.006157) val corr., 37 markers (121 reading), time: 26.27197 secs
+Add: 0.947649 (delta: 0.001669) train corr., 0.844318 (delta: 0.003758) val corr., 38 markers (134 reading), time: 29.52761 secs
+Add: 0.947522 (delta: -0.000127) train corr., 0.846204 (delta: 0.001887) val corr., 39 markers (293 reading), time: 1.06516 mins
+Add: 0.947141 (delta: -0.000381) train corr., 0.849128 (delta: 0.002924) val corr., 40 markers (303 reading), time: 1.099702 mins
+Add: 0.947802 (delta: 0.000661) train corr., 0.849972 (delta: 0.000844) val corr., 41 markers (307 reading), time: 1.113868 mins
+Add: 0.952516 (delta: 0.004714) train corr., 0.851314 (delta: 0.001342) val corr., 42 markers (356 reading), time: 1.285302 mins
+CV Number 2: # of selected markers is 42, and correlation rates for train and validation are 0.952516, 0.851314
+CV Number 2: Running time for marker selection is 1.30509 mins
+CV Number 2: End BTS model.
+
+

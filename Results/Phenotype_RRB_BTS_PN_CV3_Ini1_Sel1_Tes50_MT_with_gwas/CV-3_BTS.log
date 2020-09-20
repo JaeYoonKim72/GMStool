@@ -1,0 +1,26 @@
+CV Number 3: Start
+CV Number 3: Check prediction (correlation) rate for all markers using BTS model.
+CV Number 3: Prediction (correlation) rate for all markers using BTS is 0.966863535049513 train acc 0.767495430228436 val acc 
+CV Number 3: Prediction running time for all markers is 0.6972504 secs
+CV Number 3: Initial marker set's correlation rate is 0.370079 in train, 0.546557 in validation 
+CV Number 3: Start marker selection at 2020-09-20 18:29:37 KST
+ -- Stop condition: if the correlation rate does not increase 2460 times consecutively (20% of the total number of markers), the selection process is stopped.
+Add: 0.377297 (delta: 0.007218) train corr., 0.556392 (delta: 0.009835) val corr., 2 markers (3 reading), time: 0.2095509 secs
+Add: 0.396871 (delta: 0.019574) train corr., 0.582841 (delta: 0.026449) val corr., 3 markers (6 reading), time: 0.9005761 secs
+Add: 0.520353 (delta: 0.123483) train corr., 0.700608 (delta: 0.117767) val corr., 4 markers (9 reading), time: 1.672179 secs
+Add: 0.585705 (delta: 0.065352) train corr., 0.734398 (delta: 0.03379) val corr., 5 markers (11 reading), time: 2.088899 secs
+Add: 0.672327 (delta: 0.086621) train corr., 0.758325 (delta: 0.023927) val corr., 6 markers (12 reading), time: 2.29575 secs
+Add: 0.711609 (delta: 0.039283) train corr., 0.76426 (delta: 0.005935) val corr., 7 markers (13 reading), time: 2.500009 secs
+Add: 0.721673 (delta: 0.010063) train corr., 0.777334 (delta: 0.013075) val corr., 8 markers (15 reading), time: 2.910605 secs
+Add: 0.75362 (delta: 0.031948) train corr., 0.783439 (delta: 0.006104) val corr., 9 markers (23 reading), time: 4.582969 secs
+Add: 0.754686 (delta: 0.001065) train corr., 0.789366 (delta: 0.005927) val corr., 10 markers (24 reading), time: 4.770997 secs
+Add: 0.793471 (delta: 0.038785) train corr., 0.826992 (delta: 0.037626) val corr., 11 markers (25 reading), time: 4.960328 secs
+Add: 0.800218 (delta: 0.006748) train corr., 0.834344 (delta: 0.007352) val corr., 12 markers (29 reading), time: 5.760228 secs
+Add: 0.809897 (delta: 0.009679) train corr., 0.834554 (delta: 0.00021) val corr., 13 markers (30 reading), time: 5.951432 secs
+Add: 0.833953 (delta: 0.024055) train corr., 0.845402 (delta: 0.010848) val corr., 14 markers (31 reading), time: 6.145236 secs
+Add: 0.878373 (delta: 0.04442) train corr., 0.852137 (delta: 0.006734) val corr., 15 markers (32 reading), time: 6.340018 secs
+CV Number 3: # of selected markers is 15, and correlation rates for train and validation are 0.878373, 0.852137
+CV Number 3: Running time for marker selection is 7.573326 secs
+CV Number 3: End BTS model.
+
+
