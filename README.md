@@ -111,7 +111,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                      
                      -cv 3 \                                  # Cross validation value
                      
-                     -c 0.8 \                                 # Target correlation rate for the validation set 
+                     -c 0.85 \                                # Target correlation rate for the validation set 
                                                               # In the case of this example, a low target correlation rate is set for quick results confirmation
                                                               
                      -x 20 \                                  # Stop condition 
@@ -136,7 +136,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                          
                      -cv 3 \                                  # Cross validation value
                          
-                     -c 0.8 \                                 # Target correlation rate for the validation set
+                     -c 0.85 \                                # Target correlation rate for the validation set
                                                               # In the case of this example, a low target correlation rate is set for quick results confirmation
                                                               
                      -x 20 \                                  # Stop condition 
@@ -209,8 +209,8 @@ R-package for using the various functions defined in GMStool can be downloaded a
    - Examples of running screens for the marker selection and final modeling phases are shown in below.
    - Due to the image size constraint, the screens below show only the beginning and end of the running screens.
     
-![뉴피규MS](https://user-images.githubusercontent.com/49300659/93465990-7c6fda00-f926-11ea-9d7a-a40e1609547e.png)
-![뉴피규FM](https://user-images.githubusercontent.com/49300659/93466000-8265bb00-f926-11ea-9f1e-f9bd9abe9031.png)
+![logMS](https://user-images.githubusercontent.com/49300659/93709006-cac6e800-fb75-11ea-93b6-2e708bc2d291.png)
+![logFM](https://user-images.githubusercontent.com/49300659/93709008-cac6e800-fb75-11ea-8046-8deccb9b9e01.png)
   
   
 ## 5. Results
@@ -225,7 +225,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The list file of selected markers contains a list of all selected markers along with CV information. Markers are marked with "1" for the CV from which each marker was selected.
   - The plots below are the summary file of all CVs and the list file of selected markers among the result files of the above examples ("CV_RRB_BTS_Selection_summary.txt" and "CV_RRB_BTS_Marker_scores.txt").
   
-![뉴피규1](https://user-images.githubusercontent.com/49300659/93466058-9d382f80-f926-11ea-9925-453a8af11bdc.png)
+![MSsum](https://user-images.githubusercontent.com/49300659/93709005-ca2e5180-fb75-11ea-9584-eb0bae7286cc.png)
 
 
   ### 5-2. Final modeling phase
@@ -238,9 +238,9 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The correlation plot shows the relationship between observed and predicted phenotype values, for the test set.
   - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_122m_77c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
     
-  ![뉴피규2](https://user-images.githubusercontent.com/49300659/93466114-b80aa400-f926-11ea-9e9b-825ec4c24279.png)
+![modeligACC](https://user-images.githubusercontent.com/49300659/93709003-c995bb00-fb75-11ea-85ae-1e14efa31d88.png)
 
-  ![뉴피규3](https://user-images.githubusercontent.com/49300659/93465754-2e5ad680-f926-11ea-85c8-059141803a05.png)
+![distri](https://user-images.githubusercontent.com/49300659/93709002-c995bb00-fb75-11ea-9fe8-6b57e0b95938.png)
 
 
 ## 6. Requirement
