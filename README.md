@@ -236,7 +236,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
   - The predicted phenotype file consists of the observed phenotype values and the phenotype values predicted from the final prediction model, for the test set.
   - The chromosomal distribution plot shows the distribution of all selected markers according to chromosome numbers.
   - The correlation plot shows the relationship between observed and predicted phenotype values, for the test set.
-  - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_122m_77c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
+  - The plots below are the representative result files derived from the above examples ("Final_modeling_results_for_all_models.txt", "Best_final_RRB_selected_markers_Info.txt", "Best_final_RRB_predPhenotype_list_76m_72c.txt", "Best_final_RRB_selected_markers_Chromosomal_distribution.png", and "Best_final_RRB_predPhenotype_plot.png").
     
 ![modeligACC](https://user-images.githubusercontent.com/49300659/93709003-c995bb00-fb75-11ea-85ae-1e14efa31d88.png)
 
