@@ -4,6 +4,5 @@
 The "Results" directory is automatically created when GMStool is executed, and the output directory and result files are created according to the options provided by the user.
 
 
-![리졀피규](https://user-images.githubusercontent.com/49300659/93466190-d07abe80-f926-11ea-9614-7bbf5101d987.png)
-
+![Result](https://user-images.githubusercontent.com/49300659/93709000-c7cbf780-fb75-11ea-8956-9123946003e5.png)
 
