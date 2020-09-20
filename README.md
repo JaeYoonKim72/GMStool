@@ -72,7 +72,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                                 If the correlation rates of validation sets do not improve as many as this number in a row, 
                                 the marker selection for the corresponding CV is stopped and the results up to that point are returned (Default 20)
              -d INCREMENT,      Increament of correlation rate in marker selection (Default 0.00005).
-             -is INITIAL_SNPS,  The number of initial markers to be selected (>=2) (Default 5).
+             -is INITIAL_SNPS,  The number of initial markers to be selected (Default 1).
              -ss SNPS_SELECTED, The number of markers to be selected at one time (Default 1).
              -gpu GPU_USAGE,    If TRUE, RRB is calculated using GPU (Only available in Linux) (Default FALSE).
              -all ALL_SNPs,     If TRUE, correlation rate of all markers for the validation set in each CV is calculated, but it takes a lot of time (Default FALSE).
@@ -116,7 +116,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                                                               
                      -x 20 \                                  # Stop condition 
                      
-                     -is 5                                    # The number of initial SNPs to be selected
+                     -is 1                                    # The number of initial SNPs to be selected
 
 
 
@@ -141,7 +141,7 @@ R-package for using the various functions defined in GMStool can be downloaded a
                                                               
                      -x 20 \                                  # Stop condition 
                           
-                     -is 5                                    # The number of initial SNPs to be selected
+                     -is 1                                    # The number of initial SNPs to be selected
                                                  
                   
                      
